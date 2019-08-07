@@ -1,14 +1,14 @@
 FROM oggm/r2d:20190807T1138
 
 # enable nbserverproxy
-jupyter serverextension enable --sys-prefix nbserverproxy
+RUN jupyter serverextension enable --sys-prefix nbserverproxy
 # install the panel server extension so that
 # panel launches at startup
-mv panelserverextension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
+RUN mv panelserverextension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
 # enable panel extension
-jupyter serverextension enable --sys-prefix panelserverextension
+RUN jupyter serverextension enable --sys-prefix panelserverextension
 # ensure matplotlib uses agg backend
-mkdir $HOME/.config
-mkdir $HOME/.config/matplotlib
-echo 'backend : Agg' > $HOME/.config/matplotlib/matplotlibrc
+RUN mkdir $HOME/.config
+RUN mkdir $HOME/.config/matplotlib
+RUN echo 'backend : Agg' > $HOME/.config/matplotlib/matplotlibrc
 
