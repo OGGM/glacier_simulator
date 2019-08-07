@@ -1,0 +1,52 @@
+name: oggm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.6
+  - jupyter
+  - bokeh
+  - nbserverproxy
+  - ipywidgets
+  - graphviz
+  - numpy<1.17
+  - scipy
+  - pandas
+  - shapely
+  - matplotlib=3.0.3
+  - Pillow
+  - netcdf4
+  - scikit-image
+  - scikit-learn
+  - configobj
+  - xarray
+  - pytest
+  - dask
+  - bottleneck
+  - pyproj
+  - cartopy
+  - geopandas
+  - rasterio
+  - pyviz_comms
+  - param
+  - holoviews
+  - hvplot
+  - geoviews
+  - panel
+  - parambokeh
+  - datashader
+  - descartes
+  - seaborn
+  - ipympl
+  - pip
+  - pip:
+    - joblib
+    - progressbar2
+    - motionless
+    - nbgitpuller
+    - git+https://github.com/fmaussion/salem.git
+    - git+https://github.com/OGGM/oggm.git
+    - git+https://github.com/OGGM/oggm-edu.git
+    - git+https://github.com/OGGM/rgitools.git
+    - git+https://github.com/retostauffer/python-colorspace
+    - git+https://github.com/OGGM/pytest-mpl
+
