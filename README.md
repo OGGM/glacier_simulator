@@ -1,4 +1,4 @@
-# glacier_climate_simulater
+# glacier_simulater
 
 OGGM edu app, simulator for idealized glaciers (work-in-progress)
 
