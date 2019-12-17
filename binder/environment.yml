@@ -43,5 +43,6 @@ dependencies:
     - joblib
     - progressbar2
     - motionless
+    - git+https://github.com/fmaussion/salem.git
     - git+https://github.com/OGGM/oggm.git
     - jupyter-panel-proxy
