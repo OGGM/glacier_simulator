@@ -1,28 +1,5 @@
 #!/bin/bash
 
-# serverextensions
-jupyter serverextension enable --sys-prefix --py nbserverproxy
-jupyter serverextension enable --sys-prefix --py nbgitpuller
-
-# Back to home
-cd ~
-
-# ensure matplotlib uses agg backend
-mkdir $HOME/.config
-mkdir $HOME/.config/matplotlib
-echo 'backend : Agg' > $HOME/.config/matplotlib/matplotlibrc
-
-# run matplotlib once to generate the font cache
-python -c "import matplotlib as mpl; mpl.use('Agg'); import pylab as plt; fig, ax = plt.subplots(); fig.savefig('test.png')"
-test -e test.png && rm test.png
-
-# install the panel server extension so that
-# panel launches at startup
-mv binder/panelserverextension.py ${NB_PYTHON_PREFIX}/lib/python*/site-packages/
-
-# enable panel extension
-jupyter serverextension enable --sys-prefix panelserverextension
-
 # Set up OGGM paths
 mkdir .oggm_cache
 rm -f .oggm_config
@@ -36,4 +13,3 @@ echo "has_internet = True" >> .oggm_config
 
 # Pre-download oggm and salem sample-data
 python binder/download_cache.py
-
