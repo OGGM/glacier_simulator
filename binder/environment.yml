@@ -1,4 +1,4 @@
-name: oggm
+name: oggm-simulator
 channels:
   - conda-forge
 dependencies:
@@ -14,35 +14,18 @@ dependencies:
   - scipy
   - pandas
   - shapely
-  - matplotlib=3.0.3
-  - Pillow
   - netcdf4
-  - scikit-image
-  - scikit-learn
   - configobj
   - xarray
-  - pytest
-  - dask
-  - bottleneck
-  - pyproj
-  - cartopy
-  - geopandas
-  - rasterio
   - pyviz_comms
   - param
   - holoviews
   - hvplot
-  - geoviews
   - panel
   - parambokeh
-  - datashader
-  - descartes
-  - seaborn
   - ipympl
   - pip:
     - joblib
     - progressbar2
-    - motionless
-    - git+https://github.com/fmaussion/salem.git
     - git+https://github.com/OGGM/oggm.git
     - jupyter-panel-proxy
