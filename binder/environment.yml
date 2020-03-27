@@ -7,7 +7,7 @@ dependencies:
   - jupyter
   - bokeh
   - nbserverproxy
-  - tornado<6
+  - tornado
   - ipywidgets
   - graphviz
   - numpy<1.17
