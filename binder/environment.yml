@@ -5,9 +5,9 @@ dependencies:
   - pip
   - python=3.6
   - jupyter
-  - bokeh<2
+  - bokeh
   - nbserverproxy
-  - tornado<6
+  - tornado
   - ipywidgets
   - graphviz
   - numpy<1.17
