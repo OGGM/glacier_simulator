@@ -46,7 +46,7 @@ header_text = {
                    'Wenn du das erstemal hier bist kannst du auf "weiter" drücken ' +
                    'und dir wird eine Beschreibung in der Kopfzeile angezeigt. Um ' +
                    'zwischen den Kapiteln der Hilfe zu springen schau unter ' +
-                   '"hier Hilfe finden".<br>Diese App wurde mit tools von ' +
+                   '"Hilfe hier".<br>Diese App wurde mit tools von ' +
                    '<a href="https://holoviz.org">HoloViz</a> realisiert.' +
                    '</p>')
         },
@@ -68,7 +68,7 @@ header_text = {
                    '<p style="margin-top: 0px;">' +
                    'Hier können vier Parameter des Models verändert werden: die Hangneigung, ' +
                    'die Gletscherweite, die ELA (Gleichgewichtslinie) und der Gradient des ' +
-                   'Massenbilanzprofils. Die Änderungen werden in den Diagrammen sichtbar ' +
+                   'Massenbilanzprofils. Die Änderungen werden in den Darstellungen sichtbar ' +
                    'nachdem der "Model starten" Knopf gedrückt wird. Das Model startet ' +
                    'jedesmal von Null und läuft solange ' +
                    'bis ein Gleichgewicht erreicht wird (Volumen bleibt konstant zwischen ' +
@@ -96,10 +96,10 @@ header_text = {
                    'Als erstes zum "Modellauf" tab. Hier können die ELA (Gleichgewichtslinie), ' +
                    'der Gradient des Massenbilanzprofils, der Glen\'s creep Parameter, das ' +
                    'Gleiten am Gletscherbed (Ja/Nein) und die länge des nächsten Modellaufs ' +
-                   'eingestellt werden. Hier startet der Modellauf immer vom aktuellen ' +
+                   'eingestellt werden. In diesem Modus startet der Modellauf immer vom aktuellen ' +
                    'Modelstand. Mit "Model starten" läuft das Model für die ausgewählte ' +
                    'Dauer und mit "bis zum Gleichgewicht" läuft das Model bis es ' +
-                   'im Gleichgewicht (konstantes Volumen) mit den gewählten Einstellungen ist.' +
+                   'im Gleichgewicht (konstantes Volumen) ist.' +
                    '</p>')
         },
     
@@ -125,30 +125,54 @@ header_text = {
         },
     
     # help page for geometry options
-    'help_geometry_opt':
+    'help_geometry_opt_1':
         {
-            'en': ('<div style="font-size:18px">geometry options</div>' +
+            'en': ('<div style="font-size:18px">geometry options (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Here you can switch additional colors in the geometry plot on and off. ' +
+                   'Here you can change the bin width of the mass balance plot (top right). ' +
+                   'You can also switch additional colors in the geometry plot on and off. ' +
                    'In the top left figure the ice velocity, with a red colormap, and in the bottom left figure ' +
                    'the ice thickness, with a blue colormap, can be shown. The colorbars rearrange ' +
                    'the upper limit according to the ' +
                    'current maximum values (shown in info text of geometry plot). ' +
+                   
+                   '</p>'),
+            'de': ('<div style="font-size:18px">Geometrie optionen (I von II)</div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'Hier kann die Breite der Kästcehn im Massebilanz plot geänder werden (oben rechts). '
+                   'Außerdem können zusätzlich Farbschatierungen in der "Geometrie Darstellung" ' +
+                   'an- bzw. ausgeschaltet werden. Links oben kann die Eisgeschwindigkeit in rot' +
+                   'und links unten die Eisdicke in blau angezeigt werden. Die Farbsakalen ' +
+                   'sind dynamisch, das heißt das Maximum bezieht sich ' +
+                   'auf die jeweiligen Maximalwerte welche im info text (rechts unten) ' +
+                   'gezeigt werden.' +
+                   '</p>')
+        },
+    
+    'help_geometry_opt_2':
+        {
+            'en': ('<div style="font-size:18px">geometry options (II of II)</div>' +
+                   '<p style="margin-top: 0px;">' +
                    'The colors can be switched on after the model run or before it. ' +
                    'But when the colors are switched on during the model run the calculation ' +
-                   'takes much longer.'
+                   'takes much longer. ' +
+                   'Here you also can change the figure size of the upper row of the geometry plot ' +
+                   '("scale figure size"), so you do not have to scroll to see all figures. ' +
+                   'With "fontsize infotext" you can change the fontsize of the text in the ' +
+                   'geometry plot. Additionally you can change the size of the whole app in ' +
+                   'the browser window by pressing the "Strg" key and "+/-".' +
                    '</p>'),
-            'de': ('<div style="font-size:18px">Geometrie optionen</div>' +
+            'de': ('<div style="font-size:18px">Geometrie optionen (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Hier können zusätzlich Farbschatierungen in der "Geometrie Darstellung" ' +
-                   'an- bzw. ausgeschaltet werden. Links oben kann die Eisgeschwindigkeit ' +
-                   'und links unten die Eisdicke angezeigt werden. Beide Werte verwenden ' +
-                   'die selbe Farbskala, welche auch hier gezeigt wird. Die Farbsakala ' +
-                   'ist dabei dynamisch, das heißt das Maximum der Farbskala bezieht sich ' +
-                   'auf die jeweiligen Maximalwerte welche im info text (rechts unten) ' +
-                   'gezeigt werden. Die Farben können vor oder nach einem Modellauf ' +
+                   'Die Farben können vor oder nach einem Modellauf ' +
                    'angezeigt werden. Modelläufe mit eingeschaltenen Farben benötigen ' +
-                   'allerdings eine längere Rechenzeit.' +
+                   'allerdings eine längere Rechenzeit. ' +
+                   'Mit "Darstellungsgröße skalieren" kann die Darstellungsgröße der oberen Reihe ' +
+                   'der "Geometrie Darstellung" geändert werden, damit man nicht scrollen muss um ' +
+                   'alle Bilder zu sehen. Mit "Schriftgröße Infotext" kann die Schriftgöße in der ' +
+                   '"Geometrie Darstellung" angepasst werden, damit alle Informationen gelesen ' +
+                   'werden können. Zusätzlich kann die Größe der app mit der "Strf" Taste und den ' +
+                   'Tasten "+/-" im Browser verstellt werden.' +
                    '</p>')
         },
     
@@ -157,30 +181,52 @@ header_text = {
         {
             'en': ('<div style="font-size:18px">timeseries options</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'TODO' +
+                   'Here you can choose which parameters should be shown in the timeseries ' +
+                   'plots.'
                    '</p>'),
             'de': ('<div style="font-size:18px">Zeitreihen optionen</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'TODO' +
+                   'Hier können die Parameter ausgewählt werden welche in den drei Zeitreihen ' +
+                   'Bildern zu sehen sind.' +
                    '</p>')
         },
     
     # help page for model options
-    'help_model_opt':
+    'help_model_opt_1':
         {
-            'en': ('<div style="font-size:18px">model options</div>' +
+            'en': ('<div style="font-size:18px">model options (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'In this section you can decide if the model should stop if the glacier is growing' +
-                   'outside the domain, Moreover you can define how often the current model state should be ' +
+                   'In this section you can decide if the model should stop if the glacier is growing ' +
+                   'outside the domain. There is also a option to toggle the buttons, when the model ' +
+                   'is running so no second run is started while there is an ongoing one. And with the ' +
+                   'button "toggle buttons" the buttons can be toggled by hand.'
+                   '</p>'),
+            'de': ('<div style="font-size:18px">Model optionen (I von II)</div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'Es kann festgelegt werden, dass ein Modellauf abgebrochen wird wenn der ' +
+                   'Gletscher die Domäne verlässt. Außerdem kann man entscheiden ob die Knöpfe ' +
+                   'inaktive werden während eines Modellaufs und so verhindert werden, dass ' +
+                   'ein zweiter Lauf gestartet ist während der vorherige noch aktiv ist.' + 
+                   'Mit dem Knopf "Buttons umschalten" können diese auch manuel umgeschaltet werden.' +
+                   '</p>')
+        },
+    
+    'help_model_opt_2':
+        {
+            'en': ('<div style="font-size:18px">model options (II of II)</div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'Moreover ' +
+                   'you can define how often the current model state should be ' +
                    'shown in the plots ("show model progress every ... years") and you can ' +
                    'define a upper limit of calculation years when the model runs to equilibrium ' +
                    '("maximum calculation year of model"). The changes came into operation after ' +
                    'clicking the "set new model options" button. The current settings are shown ' +
                    'in the text (bold numbers).'
                    '</p>'),
-            'de': ('<div style="font-size:18px">Model optionen</div>' +
+            'de': ('<div style="font-size:18px">Model optionen (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Hier kann definiert werden wieoft der Modelstatus während dem Modellauf ' +
+                   'Außerdem ' +
+                   'kann definiert werden wieoft der Modelstatus während dem Modellauf ' +
                    'angezeigt werden soll ("zeige Modelfortschritt alle ... Jahre") und ' +
                    'es kann eine obere Grenze für einen Modellauf festgelegt werden ' +
                    '("Maximale Laufzeit eines Modellaufs (Jahre)"). Die Änderungen werden ' +
@@ -208,28 +254,6 @@ header_text = {
                    '</p>')
         },
     
-    #help page for app options
-    'help_app_opt':
-        {
-            'en': ('<div style="font-size:18px">app options</div>' +
-                   '<p style="margin-top: 0px;">' +
-                   'Here you can change the figure size of the upper row of the geometry plot ' +
-                   '("scale figure size"), so you do not have to scroll to see all figures. ' +
-                   'With "fontsize infotext" you can change the fontsize of the text in the ' +
-                   'geometry plot. Additionally you can change the size of the whole app in ' +
-                   'the browser window by pressing the "Strg" key and "+/-". Moreover here you ' +
-                   'can change the bin width of the mass balance plot (geometry plot upper right).' +
-                   '</p>'),
-            'de': ('<div style="font-size:18px">App optionen</div>' +
-                   '<p style="margin-top: 0px;">' +
-                   'Mit "Darstellungsgröße skalieren" kann die Darstellungsgröße der oberen Reihe ' +
-                   'der "Geometrie Darstellung" geändert werden, damit man nicht scrollen muss um ' +
-                   'alle Bilder zu sehen. Mit "Schriftgröße Infotext" kann die Schriftgöße in der ' +
-                   '"Geometrie Darstellung" angepasst werden, damit alle Informationen gelesen ' +
-                   'werden können.' +
-                   '</p>')
-        },
-    
     # help page for help panel
     'help_find_help_here':
         {
@@ -238,7 +262,7 @@ header_text = {
                    'With the buttons you can jump directly to one of the help pages you want ' +
                    'to know more about. (Also to this page here ;).)'
                    '</p>'),
-            'de': ('<div style="font-size:18px">hier Hilfe finden</div>' +
+            'de': ('<div style="font-size:18px">Hilfe hier</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Mit den Knöpfen gelangt man direkt zu einzelnen Kapiteln der Hilfe. ' +
                    '(Auch zu dieser Seite hier ;).)'
@@ -275,21 +299,21 @@ header_text = {
                    'The top right figure shows the height dependent annual mass ' +
                    'balance as a black solid line with the upper x-axis. The dashed black ' +
                    'line shows the equilibrium line altitude (ELA, which is also shown in ' +
-                   'the figures on the left).  If the plot is showing a glacier you can see ' +
-                   'blue and red bins in this plot. The blue color is indicating a positive ' +
+                   'the figures on the left). The blue color is indicating a positive ' +
                    'mass balance (mass gain) and the red color is indicating a negative mass ' +
                    'balance (mass loss). The nuance contributes to the glacier wide mass balance ' +
                    'and the relative contribution of each bin can be seen in the colorbar to the ' +
-                   'right of the figure.' +
+                   'right of the figure. The length of the bins shows the area.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie Darstellung (II von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Das Bild rechts oben zeigt die höhenabhängige jährliche Massenbilanz ' +
                    'als schwarze Linie. Die strichlierte Linie zeigt die Höhe der ELA an ' +
-                   '(auch in den anderen zwei Bildern zu sehen). Grüne Flächen zeigen ' +
-                   'einen Massengewinn am Gletscher an und rote Flächen einen ' +
-                   'Massenverlust (länge der Balken zeigen relativen Anteil an). ' +
-                   'Der Text unten rechts zeigt aktuelle Werte des Models an.'
+                   '(auch in den anderen zwei Bildern zu sehen). Blau steht dabei für eine positive ' +
+                   'Massenbilanz (Massen gewinn) und rot für eine negative Massenbilanz (Massen ' +
+                   'verlust). Die Schattierungen zeigen dabei den Beitrag zur gletscherweiten ' +
+                   'Bilanz an und werden in der Farbskala angezeigt. Die Länge der Kästen zeigt ' +
+                   'die Fläche eines Höhenbandes.' +
                    '</p>')
         },
     
@@ -307,6 +331,7 @@ header_text = {
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie Darstellung (III von III)</div>' +
                    '<p style="margin-top: 0px;">' +
+                   'Der Text unten rechts zeigt aktuelle Werte des Models an. ' +
                    'Wenn du hineinzoomen möchtest kannst du mit der Maus ein Rechteck ' +
                    'aufziehen (linke Maustaste gedrückt halten). Alle Bilder zoomen ' +
                    'automatisch auf den gleichen Ausschnitt. Um den Zoom rückgängig ' +
@@ -320,21 +345,22 @@ header_text = {
         {
             'en': ('<div style="font-size:18px">timeseries plot (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The three figures on top show the evolution of the volume, area ' +
-                   'and length with time. The resolution of the figures (how ' +
+                   'The three figures on top show the evolution of some glacier parameters ' +
+                   'with time (see timeseries opt). The resolution of the figures (how ' +
                    'often the state is shown) depends on the model settings (see ' +
                    '"model options"). After the model run has finished the section ' +
-                   'gets a number and some model settings and statistics are shown ' +
+                   'gets a number and some model settings are shown ' +
                    'in the table below. The figures and the table are cleared ' +
                    'when a new model is initialized.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Zeitreihen Darstellung (I von II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Die drei Bilder rechts zeigen die zeitlichen Verläufe der Länge, Fläche und ' +
-                   'Volumen. Die Auflösung hängt dabei von den aktuellen Modeleinstellungen ab ' +
+                   'Die drei Bilder rechts zeigen die zeitlichen Verläufe unterschiedlicher ' +
+                   'Gletscher Parameter (siehe Zeitreihen opt.). Die Auflösung hängt dabei ' +
+                   'von den aktuellen Modeleinstellungen ab ' +
                    '(siehe "Modeloptionen"). Wenn ein Modellauf beendet wurde bekommt der ' +
-                   'Abschnitt eine Nummer und es werden Modeleinstellungen und Endwerte ' +
-                   'des Models in der Tabelle rechts angezeigt. Die Bilder und die Tabelle ' +
+                   'Abschnitt eine Nummer und es werden Modeleinstellungen in der Tabelle ' +
+                   'angezeigt. Die Bilder und die Tabelle ' +
                    'werden gelöscht wenn ein neues Model gestartet wird.'
                    '</p>')
         },
@@ -518,22 +544,22 @@ panel_text = {
             'de': 'Eisdicke (unten links)'
         },
     
-    'geometry_opt_description':
-        {
-            'en': ('<p style="margin-top: 0px;">Here you can choose if the velocity or/and the thickness ' +
-                   'of the ice should be shown in the geometry plot. The colorbar shows the intervals, ' +
-                   'maximum refers to the value shown in the "info text" (bottom right geometry plot).</p> '),
-            'de': ('<p style="margin-top: 0px;">Hier kann ausgewählt werden ob die Eisgeschwindigkeit ' +
-                   'und/oder die Eisdicke als Farbe angezeigt werden soll (im Geometrie Darstellung). ' +
-                   'Die gezeigte Farbskala ' +
-                   'bezieht sich auf die maximal Werte im "info Text" (unten rechts Geometrie ' +
-                   'Darstellung). </p>')
-        },
-    
     'mb_curve_bin_width_heading':
         {
             'en': 'min bin width of mb plot (top right)',
             'de': 'min bin weite mb plots (rechts oben)'
+        },
+    
+    'geometry_figure_size_heading':
+        {
+            'en': 'scale figure size',
+            'de': 'Darstellungsgröße skalieren'
+        },
+    
+    'geometry_figure_fontsize':
+        {
+            'en': 'fontsize infotext',
+            'de': 'Schriftgröße Infotext'
         },
     
     # timeseries opt panel
@@ -625,41 +651,6 @@ panel_text = {
             'de': 'zeige Zeitreihen Darstellung'
         },
     
-    'choose_plots_description':
-        {
-            'en': ('Here you can choose which plot should be updated with the model runs. ' +
-                   'The more plots are choosen, the longer the computational time. Here ' +
-                   'also the width of the table could be changed to fit your screen size.'),
-            'de': ('Hier can ausgewählt werden welche Darstellungen mit den Modelläufen ' +
-                   'aktualisiert werden sollen. Umso mehr Darstellungen ausgewählt sind, ' +
-                   'umso länger die Rechenzeit des Models. Außerdem kann hier die Breite ' +
-                   'der Tabelle eingestellt werden.')
-        },
-    
-    # app opt panel
-    
-    'geometry_figure_size_heading':
-        {
-            'en': 'scale figure size',
-            'de': 'Darstellungsgröße skalieren'
-        },
-    
-    'geometry_figure_fontsize':
-        {
-            'en': 'fontsize infotext',
-            'de': 'Schriftgröße Infotext'
-        },
-    
-    'app_options_description':
-        {
-            'en': ('Here you can change the geometry plot figure size, the font size ' +
-                   'of the geometry plot infotext (bottom right) and the number of shown ' +
-                   'table rows.'),
-            'de': ('Hier kann die Darstellungsgröße der geometrie darstellung, ' +
-                   'die Schriftgröße des Infotextes und die Anzahl der Tabellenzeilen geändert ' +
-                   'werden.')
-        },
-    
     # help panel
     
     'help_panel_description':
@@ -709,12 +700,6 @@ tab_menu_headings = {
         {
             'en': 'model opt.',
             'de': 'Model opt.'
-        },
-    
-    'app_opt':
-        {
-            'en': 'app opt.',
-            'de': 'App opt.'
         },
     
     'find_help_here':
