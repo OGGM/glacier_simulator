@@ -18,7 +18,7 @@ timeseries_plot_labels
 
 timeseries_table_labels
     containing all the text of the timeseries table
-    
+
 figure_tab_headings
     containing the headings of the tabs of the figures
 '''
@@ -30,16 +30,16 @@ header_text = {
     # start page
     'help_start_page':
         {
-            'en': ('<div style="font-size:20px">OGGM edu glacier simulator</div>' +
+            'en': ('<div style="font-size:20px">OGGM-Edu glacier simulator</div>' +
                    '<p style="margin-top: 0px;">' +
                    'With this app you can simulate idealized glaciers using the ' +
                    '<a href="https://oggm.org">OGGM</a> model. If you are not ' +
-                   'familiar with the app click on "next" to go through the ' +
-                   'instruction or go to the "find help here" section to ' +
-                   'jump to a certain chapter of the help. <br>This app was realised ' +
-                   'using tools of <a href="https://holoviz.org">HoloViz</a>.' +
+                   'familiar with the app yet, click "next" to go through the ' +
+                   'instructions or go to the "find help here" section to ' +
+                   'jump to a chosen chapter of the help. <br>This app was realised ' +
+                   'with the <a href="https://holoviz.org">HoloViz</a> python packages.' +
                    '</p>'),
-            'de': ('<div style="font-size:20px">OGGM edu Gletschersimulator</div>' +
+            'de': ('<div style="font-size:20px">OGGM-Edu Gletschersimulator</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Mit dieser App können idealisierte Gletscher mithilfe des ' +
                    '<a href="https://oggm.org">OGGM</a> Models simuliert werden. ' +
@@ -50,19 +50,19 @@ header_text = {
                    '<a href="https://holoviz.org">HoloViz</a> realisiert.' +
                    '</p>')
         },
-    
+
     # beginner mode help
     'help_beginner_mode':
         {
-            'en': ('<div style="font-size:18px">beginner mode</div>' +
+            'en': ('<div style="font-size:18px">Beginner mode</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'In the beginner mode you can change four parameters of the model: ' +
-                   'the slope and the widthprofile of the glacierbed, the ELA ' +
-                   '(equilibrium line altitude) and the gradient of the mass balance profile.' +
-                   'The changes are becoming visible in the figures after the ' +
-                   '"run the model" button is clicked. In the beginner mode the ' +
-                   'model will always start from zero and will run until it reached ' +
-                   'equilibrium (volume stayed constant between two succeeding timesteps).' +
+                   'In "beginner mode" (the default), you can change four model parameters: ' +
+                   'the slope and the width profile of the glacier bed, the ELA ' +
+                   '(Equilibrium Line Altitude) and the gradient of the mass-balance profile.' +
+                   'Changes are becoming visible in the figures only after the ' +
+                   '"run the model" button is clicked. In "beginner mode", the ' +
+                   'model will always start from zero and will run until it reaches ' +
+                   'equilibrium (volume approximately constant between two consecuting timesteps).' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Anfänger</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -75,21 +75,21 @@ header_text = {
                    'zwei aufeinanderfolgenden Zeitschritten).' +
                    '</p>')
         },
-    
+
     # advanced mode help
     'help_advanced_mode_1':
         {
-            'en': ('<div style="font-size:18px">advanced mode (I of II)</div>' +
+            'en': ('<div style="font-size:18px">Advanced mode (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'First lets look at the ' +
+                   'The "advanced mode" allows for more complex experiments. ' +
+                   'First, lets have a look at the ' +
                    '"run the model" tab. Here you can change the ELA (equilibrium line ' +
                    'altitude), the gradient of the mass balance profile, Glen\'s creep ' +
-                   'parameter, if there should be sliding at the glacierbed and the last ' +
+                   'parameter, and if sliding at the glacier bed should be accounted for. The ' +
                    'slider defines for how long the model should be running with the chosen ' +
-                   'settings. In the advanced mode the model always continue from the current ' +
+                   'settings. In "advanced mode", the model always continues from the current ' +
                    'glacier state. By clicking "advance model" the model will run for the ' +
-                   'chosen years or with "run to equilibrium" the model runs until it ' +
-                   'reaches equilibrium with the current settings (ignoring the last slider).'
+                   'chosen number of years. With "run to equilibrium", the model will ignore the slider and run until equilibrium is reached.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (I von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -102,16 +102,16 @@ header_text = {
                    'im Gleichgewicht (konstantes Volumen) ist.' +
                    '</p>')
         },
-    
+
     'help_advanced_mode_2':
         {
-            'en': ('<div style="font-size:18px">advanced mode (II of II)</div>' +
+            'en': ('<div style="font-size:18px">Advanced mode (II of II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Now looking at the "create new model" tab. Here you can start with a ' +
-                   'new model by defining the width and the bedrock profile, if the linear profile is ' +
-                   'selected also the slope can be defined. By ' +
+                   'fresh glacier state by defining the width and the bedrock profile. If the linear profile is ' +
+                   'selected, you can also choose its slope. By ' +
                    'clicking the "create new model" button the changes are getting visible ' +
-                   'in the figures and a new model with zero extend is initialised.'
+                   'in the figures and a fresh glacier state is initialised.'
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -123,19 +123,19 @@ header_text = {
                    'Diagramm angezeigt.'
                    '</p>')
         },
-    
+
     # help page for geometry options
     'help_geometry_opt_1':
         {
-            'en': ('<div style="font-size:18px">geometry options (I of II)</div>' +
+            'en': ('<div style="font-size:18px">Geometry plots options (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Here you can change the bin width of the mass balance plot (top right). ' +
-                   'You can also switch additional colors in the geometry plot on and off. ' +
-                   'In the top left figure the ice velocity, with a red colormap, and in the bottom left figure ' +
-                   'the ice thickness, with a blue colormap, can be shown. The colorbars rearrange ' +
-                   'the upper limit according to the ' +
-                   'current maximum values (shown in info text of geometry plot). ' +
-                   
+                   'You can also decide to display additional variables on the plots: ' +
+                   'In the top left figure the ice velocity (red colormap), and in the bottom left figure ' +
+                   'the ice thickness (blue colormap). The colorbars update their ' +
+                   'upper limit according to the ' +
+                   'current maximum values (shown in info text on the bottom right). ' +
+
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie optionen (I von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -148,19 +148,18 @@ header_text = {
                    'gezeigt werden.' +
                    '</p>')
         },
-    
+
     'help_geometry_opt_2':
         {
-            'en': ('<div style="font-size:18px">geometry options (II of II)</div>' +
+            'en': ('<div style="font-size:18px">Geometry plots options (II of II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The colors can be switched on after the model run or before it. ' +
-                   'But when the colors are switched on during the model run the calculation ' +
-                   'takes much longer. ' +
-                   'Here you also can change the figure size of the upper row of the geometry plot ' +
-                   '("scale figure size"), so you do not have to scroll to see all figures. ' +
-                   'With "fontsize infotext" you can change the fontsize of the text in the ' +
-                   'geometry plot. Additionally you can change the size of the whole app in ' +
-                   'the browser window by pressing the "Strg" key and "+/-".' +
+                   'The additional variable displays can be switched on after or before a model run. ' +
+                   'When the colors are switched on for a model run, the calculation ' +
+                   'takes much longer: this is why they are switched off per default. ' +
+                   'You can also change the figure size and the text fontsize, ' +
+                   'which can be useful to adapt to various screen sizes. ' +
+                   'Note that you can also change the size of the whole app in ' +
+                   'the browser window by pressing the "Strg" key and "+/-" or mouse scroll.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie optionen (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -175,13 +174,13 @@ header_text = {
                    'Tasten "+/-" im Browser verstellt werden.' +
                    '</p>')
         },
-    
+
     # help page for timeseries options
     'help_timeseries_opt':
         {
-            'en': ('<div style="font-size:18px">timeseries options</div>' +
+            'en': ('<div style="font-size:18px">Timeseries plots options</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Here you can choose which parameters should be shown in the timeseries ' +
+                   'Here you can choose which variables should be shown in the timeseries ' +
                    'plots.'
                    '</p>'),
             'de': ('<div style="font-size:18px">Zeitreihen optionen</div>' +
@@ -190,27 +189,26 @@ header_text = {
                    'Bildern zu sehen sind.' +
                    '</p>')
         },
-    
+
     # help page for model options
     'help_model_opt_1':
         {
-            'en': ('<div style="font-size:18px">model options (I of II)</div>' +
+            'en': ('<div style="font-size:18px">Model options (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'In this section you can decide if the model should stop if the glacier is growing ' +
-                   'outside the domain. There is also a option to toggle the buttons, when the model ' +
-                   'is running so no second run is started while there is an ongoing one. And with the ' +
-                   'button "toggle buttons" the buttons can be toggled by hand.'
+                   'outside the domain. There is also a option to toggle the buttons: i.e. ' +
+                   'no second run can be started as long as the model is running.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Model optionen (I von II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Es kann festgelegt werden, dass ein Modellauf abgebrochen wird wenn der ' +
                    'Gletscher die Domäne verlässt. Außerdem kann man entscheiden ob die Knöpfe ' +
                    'inaktive werden während eines Modellaufs und so verhindert werden, dass ' +
-                   'ein zweiter Lauf gestartet ist während der vorherige noch aktiv ist.' + 
+                   'ein zweiter Lauf gestartet ist während der vorherige noch aktiv ist.' +
                    'Mit dem Knopf "Buttons umschalten" können diese auch manuel umgeschaltet werden.' +
                    '</p>')
         },
-    
+
     'help_model_opt_2':
         {
             'en': ('<div style="font-size:18px">model options (II of II)</div>' +
@@ -219,9 +217,8 @@ header_text = {
                    'you can define how often the current model state should be ' +
                    'shown in the plots ("show model progress every ... years") and you can ' +
                    'define a upper limit of calculation years when the model runs to equilibrium ' +
-                   '("maximum calculation year of model"). The changes came into operation after ' +
-                   'clicking the "set new model options" button. The current settings are shown ' +
-                   'in the text (bold numbers).'
+                   '("maximum calculation year of model"). This is useful to avoid idle states. All changes are taken into account after ' +
+                   'clicking the "set new model options" button.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Model optionen (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -234,16 +231,15 @@ header_text = {
                    'Einstellungen werden im Text gezeigt (fettgeschriebene Zahlen).' +
                    '</p>')
         },
-    
+
     # help page for choose plots
     'help_choose_plots':
         {
-            'en': ('<div style="font-size:18px">choose plots</div>' +
+            'en': ('<div style="font-size:18px">Choose the plots to display</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Here you can decide which plots you want to use/should be updated. ' +
-                   'So if you only are interested in one of the plots you can save ' +
-                   'calculation time when only select the desired one. If one plot is ' +
-                   'not selected this will be indicated on the plot.'
+                   'Here you can decide which plots you want to be shown and updated during model runs. ' +
+                   'If you are interested in one of the plots only (e.g. beginner mode) you can save ' +
+                   'calculation time by selecting only one view.'
                    '</p>'),
             'de': ('<div style="font-size:18px">Darstellung wählen</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -253,14 +249,14 @@ header_text = {
                    'aktiviert ist wird das in der Darstellung selbst angezeigt.' +
                    '</p>')
         },
-    
+
     # help page for help panel
     'help_find_help_here':
         {
-            'en': ('<div style="font-size:18px">find help here</div>' +
+            'en': ('<div style="font-size:18px">Find help here</div>' +
                    '<p style="margin-top: 0px;">' +
                    'With the buttons you can jump directly to one of the help pages you want ' +
-                   'to know more about. (Also to this page here ;).)'
+                   'to know more about. (Also to this page here ;)'
                    '</p>'),
             'de': ('<div style="font-size:18px">Hilfe hier</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -268,18 +264,17 @@ header_text = {
                    '(Auch zu dieser Seite hier ;).)'
                    '</p>')
         },
-    
+
     # help for geometry plot
     'help_geometry_plot_1':
         {
-            'en': ('<div style="font-size:18px">geometry plot (I of III)</div>' +
+            'en': ('<div style="font-size:18px">Glacier geometry plots (I of III)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The top left figure shows the glacierbed from the side in gray. ' +
-                   'Underneath on the left the figure shows the glacier from above ' +
-                   'and the dark gray areas indicate the boarder of the glacierbed.' +
-                   'In both figures the dark blue line indicates the current glacier ' +
-                   'state and if using the advanced mode also the previous state is ' +
-                   'shown with a dashed line.' +
+                   'The top left figure shows the glacier surface (dark blue) and its bed (grey) seen from the side. ' +
+                   'The bottom left figure shows the glacier seen from above. ' +
+                   'In both figures the blue line indicates the current glacier ' +
+                   'state (in "advanced mode": the previous state is also ' +
+                   'shown with a dashed line).' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie Darstellung (I von III)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -291,19 +286,19 @@ header_text = {
                    '(Start des aktuellen Modellaufes) mit einer strichlieren Linie angezeigt.'
                    '</p>')
         },
-    
+
     'help_geometry_plot_2':
         {
-            'en': ('<div style="font-size:18px">geometry plot (II of III)</div>' +
+            'en': ('<div style="font-size:18px">Glacier geometry plots (II of III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'The top right figure shows the height dependent annual mass ' +
-                   'balance as a black solid line with the upper x-axis. The dashed black ' +
+                   'balance as a black solid line (values on the upper x-axis). The horizontal dashed ' +
                    'line shows the equilibrium line altitude (ELA, which is also shown in ' +
                    'the figures on the left). The blue color is indicating a positive ' +
                    'mass balance (mass gain) and the red color is indicating a negative mass ' +
-                   'balance (mass loss). The nuance contributes to the glacier wide mass balance ' +
-                   'and the relative contribution of each bin can be seen in the colorbar to the ' +
-                   'right of the figure. The length of the bins shows the area.' +
+                   'balance (mass loss). Each elevation contributes to the glacier wide mass balance: ' +
+                   'the relative contribution of each elevation bin can be seen on the colorbar to the ' +
+                   "right of the figure. The length of the bar shows the elevation bin's area (x-axis)." +
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie Darstellung (II von III)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -316,17 +311,15 @@ header_text = {
                    'die Fläche eines Höhenbandes.' +
                    '</p>')
         },
-    
+
     'help_geometry_plot_3':
         {
-            'en': ('<div style="font-size:18px">geometry plot (III of III)</div>' +
+            'en': ('<div style="font-size:18px">Glacier geometry plots (III of III)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The text ' +
-                   'underneath shows statistics of the current glacier (model) state.' +
-                   'If you want to zoom in you can do this by clicking into one of ' +
-                   'the figures, hold the click and draw an rectangle. All figures ' +
+                   'The text on the bottom right shows statistics of the current modelled glacier state. <br>' +
+                   'If you want to zoom into a figure, you can do this by clicking and drawing a rectangle in one of the figures. All other figures ' +
                    'will rezoom automatically to the same extent. To go back to the ' +
-                   'original extent click on the "Reset" button to the right of the ' +
+                   'original extent, click on the "Reset" button to the right of the ' +
                    'figures (two arrows forming a circle).' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie Darstellung (III von III)</div>' +
@@ -339,19 +332,19 @@ header_text = {
                    'Pfeile welche einen Kreis formen).' +
                    '</p>')
         },
-    
+
     # help page for timeseries plot
     'help_timeseries_plot_1':
         {
-            'en': ('<div style="font-size:18px">timeseries plot (I of II)</div>' +
+            'en': ('<div style="font-size:18px">Timeseries plots (I of II)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The three figures on top show the evolution of some glacier parameters ' +
-                   'with time (see timeseries opt). The resolution of the figures (how ' +
+                   'The three figures show the evolution of some glacier variables ' +
+                   'with time. The resolution of the figures (how ' +
                    'often the state is shown) depends on the model settings (see ' +
-                   '"model options"). After the model run has finished the section ' +
-                   'gets a number and some model settings are shown ' +
-                   'in the table below. The figures and the table are cleared ' +
-                   'when a new model is initialized.' +
+                   '"model options"). After a model run has finished, the glacier state ' +
+                   'gets a number and some model variable are shown ' +
+                   'in the table at the bottom. The figures and the table are cleared ' +
+                   'when a new glacier is initialized (e.g. after changing the bed or in beginner mode).' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Zeitreihen Darstellung (I von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -364,17 +357,17 @@ header_text = {
                    'werden gelöscht wenn ein neues Model gestartet wird.'
                    '</p>')
         },
-    
+
     'help_timeseries_plot_2':
         {
-            'en': ('<div style="font-size:18px">timeseries plot (II of II)</div>' +
+            'en': ('<div style="font-size:18px">Timeseries plots (II of II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'You can zoom in and out on the plots by using the mousewheel ' +
                    'and you can use a mouseclick to drag the plots around. If you ' +
-                   'zoom in on one plot the other plot will automatically rezoom ' +
+                   'zoom in on one plot the other plots will automatically rezoom ' +
                    'to the same time span. When moving with the mouse over the curves ' +
                    'a hover will show you the exact values of the points. To go back ' +
-                   'to the original extent click on the "Reset" button to the left of ' +
+                   'to the original extent click on the "Reset" button to the right of ' +
                    'the figures (two arrows forming a circle).'
                    '</p>'),
             'de': ('<div style="font-size:18px">Zeitreihen Darstellung (II von II)</div>' +
@@ -388,241 +381,241 @@ header_text = {
                    'werden die genauen Werte der Zeitschritte angezeigt.'
                    '</p>')
         },
-    
+
     # label for next button
     'next_button_text':
         {
-            'en': 'next',
-            'de': 'weiter'
+            'en': 'Next',
+            'de': 'Weiter'
         },
-    
+
     # label for previous button
     'previous_button_text':
         {
-            'en': 'previous',
-            'de': 'zurück'
+            'en': 'Previous',
+            'de': 'Zurück'
         },
 }
 
 # text for panels and their widgets
 panel_text = {
     # beginner mode and advanced mode panels
-    
+
     # options for bedrock profil, do not change order, first entry is default
     'bed_rock_profil_values':
         {
-            'en': ['linear', 'getting flatter', 'getting steeper', 'cliff'],
-            'de': ['linear', 'flächer werdend', 'steiler werdend', 'Klippe']
+            'en': ['Linear', 'Getting flatter', 'Getting steeper', 'Cliff'],
+            'de': ['Linear', 'Flächer werdend', 'Steiler werdend', 'Klippe']
         },
-    
+
     # options for bedrock width, do not change order, first entry is default
     'bed_rock_width_values':
         {
-            'en': ['constant', 'getting narrower', 'getting wider',
-                   'wide top, narrow bottom'],
-            'de': ['konstant', 'enger werden', 'breiter werden',
-                   'oben weit, unten eng']
+            'en': ['Constant', 'Getting narrower', 'Getting wider',
+                   'Wide top, narrow bottom'],
+            'de': ['Konstant', 'Enger werden', 'Breiter werden',
+                   'Oben weit, unten eng']
         },
-    
+
     # options for glens creep parameter, do not change order, second entry is default
     'glens_creep_parameter_values':
         {
-            'en': ['small', 'medium', 'large'],
-            'de': ['klein', 'mittel', 'groß']
+            'en': ['Small', 'Normal', 'Large'],
+            'de': ['Klein', 'Normal', 'Groß']
         },
-    
+
     # options for sliding, do not change order, first entry is default
     'sliding_parameter_values':
         {
-            'en': ['no sliding', 'sliding'],
-            'de': ['kein Gleiten', 'Gleiten']
+            'en': ['No sliding', 'Sliding'],
+            'de': ['Kein Gleiten', 'Gleiten']
         },
-    
+
     # names for select widgets
     'bed_rock_slope_beginner_heading':
         {
-            'en': 'slope of bedrock profile',
+            'en': 'Slope of bedrock profile',
             'de': 'Hangneigung'
         },
-    
+
     'bed_rock_slope_advanced_heading':
         {
-            'en': 'slope of linear bedrock profile',
+            'en': 'Slope of linear bedrock profile',
             'de': 'Hangneigung (lineares Untergrundprofil)'
         },
-    
+
     'bed_rock_width_heading':
         {
-            'en': 'width along glacier',
+            'en': 'Width along glacier',
             'de': 'Gletscherweite'
         },
-    
+
     'mb_gradient_heading':
         {
-            'en': 'mass balance gradient',
+            'en': 'Mass-balance gradient',
             'de': 'Massenbilanzgradient'
         },
-    
+
     'ELA_height_heading':
         {
             'en': 'ELA (equilibrium line altitude)',
             'de': 'ELA (Gleichgewichtslinie)'
         },
-    
+
     'beginner_button_heading':
         {
-            'en': 'run the model',
+            'en': 'Run the model',
             'de': 'Model starten'
         },
-    
+
     'bed_rock_profil_heading':
         {
-            'en': 'bedrock profile',
+            'en': 'Bedrock profile',
             'de': 'Untergrundprofil'
         },
-    
+
     'glens_creep_parameter_heading':
         {
             'en': "Glen's creep parameter",
             'de': "Glen's creep Parameter"
         },
-    
+
     'sliding_parameter_heading':
         {
             'en': 'Sliding parameter',
-            'de': 'gleiten'
+            'de': 'Gleiten'
         },
-    
+
     'years_to_advance_model_heading':
         {
-            'en': 'years to advance model',
+            'en': 'Years to advance model',
             'de': 'Jahre für Modellauf'
         },
-    
+
     'button_for_equilibrium_run_heading':
         {
-            'en': 'run to equilibrium',
-            'de': 'bis zum Gleichgewicht'
+            'en': 'Run to equilibrium',
+            'de': 'Bis zum Gleichgewicht'
         },
-    
+
     'button_to_advance_for_some_years_heading':
         {
-            'en': 'advance model',
+            'en': 'Advance model',
             'de': 'Model starten'
         },
-    
+
     'button_to_create_new_model_heading':
         {
-            'en': 'create new model',
-            'de': 'neues Model'
+            'en': 'Create new model',
+            'de': 'Neues Model'
         },
-    
+
     # headings for advanced mode tabs
     'run_model_tab_heading':
         {
-            'en': 'run the model',
+            'en': 'Run the model',
             'de': 'Modellauf'
         },
-    
+
     'create_new_model_tab_heading':
         {
-            'en': 'create new model',
-            'de': 'neues Model'
+            'en': 'Create new model',
+            'de': 'Neues Model'
         },
-    
+
     # geometry options panel
-    
+
     'show_velocity_heading':
         {
-            'en': 'ice velocity (top left)',
+            'en': 'Ice velocity (top left)',
             'de': 'Eisgeschwindigkeit (oben links)'
         },
-    
+
     'show_thickness_heading':
         {
-            'en': 'ice thickness (bottom left)',
+            'en': 'Ice thickness (bottom left)',
             'de': 'Eisdicke (unten links)'
         },
-    
+
     'mb_curve_bin_width_heading':
         {
-            'en': 'min bin width of mb plot (top right)',
-            'de': 'min bin weite mb plots (rechts oben)'
+            'en': 'Min bin width of mb plot (top right)',
+            'de': 'Min Bin Weite mb Plots (rechts oben)'
         },
-    
+
     'geometry_figure_size_heading':
         {
-            'en': 'scale figure size',
+            'en': 'Scale figure size',
             'de': 'Darstellungsgröße skalieren'
         },
-    
+
     'geometry_figure_fontsize':
         {
-            'en': 'fontsize infotext',
+            'en': 'Fontsize infotext',
             'de': 'Schriftgröße Infotext'
         },
-    
+
     # timeseries opt panel
-    
+
     'top_axis_heading':
         {
-            'en': 'top axis',
-            'de': 'obere Achse'
+            'en': 'Top axis',
+            'de': 'Obere Achse'
         },
-    
+
     'middle_axis_heading':
         {
-            'en': 'middle axis',
-            'de': 'mittlere Achse'
+            'en': 'Middle axis',
+            'de': 'Mittlere Achse'
         },
-    
+
     'bottom_axis_heading':
         {
-            'en': 'bottom axis',
-            'de': 'untere Achse'
+            'en': 'Bottom axis',
+            'de': 'Untere Achse'
         },
-    
+
     # options for timeseries plots, do not change order, first three entries are default
     'timeseries_axis_options':
         {
-            'en': ['volume', 'area', 'length','max velocity', 
-                   'max thickness', 'max ice flux'],
-            'de': ['Volumen', 'Fläche', 'Länge', 'max Geschwindigkeit', 
-                   'max Dicke', 'max Eisfluss']
+            'en': ['Volume', 'Area', 'Length','Max velocity',
+                   'Max thickness', 'Max ice flux'],
+            'de': ['Volumen', 'Fläche', 'Länge', 'Max Geschwindigkeit',
+                   'Max Dicke', 'Max Eisfluss']
         },
-    
+
     # panel for model options
-    
+
     'stop_if_outside_heading':
         {
-            'en': 'stop run if glacier outside of domain',
-            'de': 'stop wenn Gletscher außerhalb'
+            'en': 'Stop run if glacier outside of domain',
+            'de': 'Stop wenn Gletscher außerhalb'
         },
-    
+
     'toggle_buttons_checkbox_heading':
         {
-            'en': 'toggle buttons during run',
+            'en': 'Toggle buttons during run',
             'de': 'Buttons umschalten während Modellauf'
         },
-    
+
     'toggle_buttons_button_heading':
         {
-            'en': 'toggle buttons',
+            'en': 'Toggle buttons',
             'de': 'Buttons umschalten'
         },
-    
+
     'dyears_model_slider_heading':
         {
-            'en': 'show model progress every .. years',
-            'de': 'zeige Modelfortschritt alle .. Jahre'
+            'en': 'Show model progress every .. years',
+            'de': 'Zeige Modelfortschritt alle .. Jahre'
         },
-    
+
     'max_calc_years_slider_heading':
         {
-            'en': 'abort model after .. years',
+            'en': 'Abort model after .. years',
             'de': 'Model abbrechen nach .. Jahren'
         },
-    
+
     'current_model_options_text':
         {
             'en': ('Model currently showing progress every **{}** years and ' +
@@ -630,33 +623,33 @@ panel_text = {
             'de': ('Model zeigt zurzeit Fortschritt alle **{}** Jahre und ' +
                    'Modellauf wird nach **{}** Jahren abgebrochen.')
         },
-    
+
     'set_model_options_heading':
         {
-            'en': 'set new model options',
-            'de': 'neue Optionen festlegen'
+            'en': 'Set new model options',
+            'de': 'Neue Optionen festlegen'
         },
-    
+
     # choose plots panel
-    
+
     'show_geometry_plot_heading':
         {
-            'en': 'show geometry plot',
-            'de': 'zeige Geometrie Darstellung'
+            'en': 'Show geometry plots',
+            'de': 'Zeige Geometrie Darstellung'
         },
-    
+
     'show_timeseries_plot_heading':
         {
-            'en': 'show timeseries plot',
-            'de': 'zeige Zeitreihen Darstellung'
+            'en': 'Show timeseries plots',
+            'de': 'Zeige Zeitreihen Darstellung'
         },
-    
+
     # help panel
-    
+
     'help_panel_description':
         {
-            'en': ('<p style="margin-top: 0px;">Click on button to get help shown in ' +
-                   'Headerline. Navigate with "next" and "previous" button (on the right).' +
+            'en': ('<p style="margin-top: 0px;">Click on any button to get help on a given topic. ' +
+                   'Navigate with the "Next" and "Previous" buttons on the top right.' +
                    '</p>'),
             'de': ('<p style="margin-top: 0px;">Auf Button drücken um Hilfe in der ' +
                    'Kopfzeile anzuzeigen. Navigieren mit dem "weiter" und ' +
@@ -668,44 +661,56 @@ panel_text = {
 tab_menu_headings = {
     'beginner_mode':
         {
-            'en': 'beginner mode',
+            'en': 'Beginner mode',
             'de': 'Anfänger'
         },
-    
+
     'advanced_mode':
         {
-            'en': 'advanced mode',
+            'en': 'Advanced mode',
             'de': 'Fortgeschritten'
         },
-    
+
     'choose_plots':
         {
-            'en': 'choose plots',
+            'en': 'Choose plots',
             'de': 'Plots wählen'
         },
-    
+
     'geometry_opt':
         {
-            'en': 'geometry opt.',
+            'en': 'Geometry opt.',
             'de': 'Geometrie opt.'
         },
-    
+
     'timeseries_opt':
         {
-            'en': 'timeseries opt.',
+            'en': 'Timeseries opt.',
             'de': 'Zeitreihen opt.'
         },
-    
+
     'model_opt':
         {
-            'en': 'model opt.',
+            'en': 'Model opt.',
             'de': 'Model opt.'
         },
-    
+
     'find_help_here':
         {
-            'en': 'find help here',
+            'en': 'Find help here',
             'de': 'Hilfe hier'
+        },
+
+    'geometry_plot':
+        {
+            'en': 'Geometry plots',
+            'de': 'Geometrie Darstellung'
+        },
+
+    'timeseries_plot':
+        {
+            'en': 'Timeseries plots',
+            'de': 'Zeitreihen Darstellung'
         },
 }
 
@@ -713,94 +718,94 @@ tab_menu_headings = {
 geometry_plot_labels = {
     'bedrock_x_label':
         {
-            'en': 'distance along glacier (km)',
+            'en': 'Distance along glacier (km)',
             'de': 'Distanz entlang des Gletschers (km)'
         },
-    
+
     'bedrock_height_y_label':
         {
-            'en': 'altitude (m)',
+            'en': 'Altitude (m)',
             'de': 'Höhe (m)'
         },
-    
+
     'bedrock_width_y_label':
         {
-            'en': 'width (m)',
+            'en': 'Width (m)',
             'de': 'Weite (m)'
         },
-    
+
     'glacier_label':
         {
-            'en': 'glacier',
+            'en': 'Glacier',
             'de': 'Gletscher'
         },
-    
+
     'mb_x_label':
         {
-            'en': 'annual mass balance (mm w.e./year)',
-            'de': 'jährliche Massenbilanz (mm w.e/Jahr)'
+            'en': 'Annual mass-balance (mm w.e./year)',
+            'de': 'Jährliche Massenbilanz (mm w.e/Jahr)'
         },
-    
+
     'area_x_label':
         {
-            'en': 'area',
-            'de': 'Fläche'
+            'en': 'Bin area',
+            'de': 'Bin Fläche'
         },
-    
+
     'mb_label':
         {
-            'en': 'mass balance',
+            'en': 'Mass-balance',
             'de': 'Massenbilanz'
         },
-    
+
     'info_text_new_model':
         {
             'en': 'New Model geometry\ninitialised',
             'de': 'Neue Model Geometry\ninitialisiert'
         },
-    
+
     'info_text_switched_off':
         {
             'en': 'This plot is currently not used/updated.\nTo switch it on go to "choose plots".',
             'de': 'Dieses Diagramm ist aktuell nicht aktiv\nAktivieren unter "Darstellung wählen"'
         },
-    
+
     'info_text_switched_on':
         {
             'en': 'Plot is switched on again\nand will be updated with the next run!',
             'de': 'Diagramm ist aktiv und\n wird mit nächstem Modellauf aktualisiert'
         },
-    
+
     'info_text_running_model':
         {
             'en': 'Model is running:',
             'de': 'Model läuft:'
         },
-    
+
     'info_text_equilibrium':
         {
             'en': 'Model reached equilibrium',
             'de': 'Model beendet und im Gleichgewicht'
         },
-    
+
     'info_text_stopped_model':
         {
             'en': 'Model finished',
             'de': 'Model beendet'
         },
-    
+
     'info_text_aborted_model':
         {
             'en': 'Model stopped (max calculation time reached, see "model options")',
             'de': 'Modellauf abgebrochen (maximale Zeit erreicht, siehe "Modeloptionen")'
         },
-    
+
     'info_text_outside_domain':
         {
             'en': 'Model stopped (glacier outside of domain, see "model options")',
             'de': 'Modellauf abgebrochen (Gletscher außerhalb der Domäne, siehe "Modeloptionen")'
         },
-    
+
     'info_text_statistics':
         {
             'en': ('\nTime: {:4.0f} years     Length: {:4.2f} km      Area: {:.2f} km²     Volume: {:.2f} km³\n'
@@ -819,52 +824,52 @@ timeseries_plot_labels = {
             'en': 'Time (years)',
             'de': 'Zeit (Jahre)'
         },
-    
+
     'y_label_volume':
         {
             'en': 'V (km³)',
             'de': 'V (km³)'
         },
-    
+
     'y_label_area':
         {
             'en': 'A (km²)',
             'de': 'A (km²)'
         },
-    
+
     'y_label_length':
         {
             'en': 'L (km)',
             'de': 'L (km)'
         },
-    
+
     'y_label_max_velocity':
         {
             'en': 'u\u2098\u2090\u2093 (m/year)',
             'de': 'u\u2098\u2090\u2093 (m/Jahr)'
         },
-    
+
     'y_label_max_thickness':
         {
             'en': u'h\u2098\u2090\u2093 (m)',
             'de': u'h\u2098\u2090\u2093 (m)'
         },
-    
+
     'y_label_max_ice_flux':
         {
             'en': u'f\u2098\u2090\u2093 (m³/year)',
             'de': u'f\u2098\u2090\u2093 (m³/Jahr)'
         },
-    
+
     'plot_active':
         {
-            'en': 'plot is ready to use \nand update with the next run',
+            'en': 'Plot is ready to use \nand update with the next run',
             'de': 'Diagramm bereit und\nwird mit nächstem Modellauf aktualisiert'
         },
-    
+
     'plot_unactive':
         {
-            'en': 'plot is switched off \nto switch on look at "choose plots"',
+            'en': 'Plot is switched off \nto switch on look at "choose plots"',
             'de': 'Diagramm nicht aktiv\nAktivieren unter "Diagramm wählen"'
         },
 }
@@ -873,29 +878,29 @@ timeseries_plot_labels = {
 timeseries_table_labels = {
     'table_heading_1':
         {
-            'en': ['Profil', 'Slope (°)', 'width', 'ELA (m)',
-                   'gradient (mm w.e./year/m)', 'Glen\'s creep',
-                   'sliding', 'Years'],
+            'en': ['Profile', 'Slope (°)', 'Width (m)', 'ELA (m)',
+                   'MB Gradient (mm w.e./year/m)', 'Glen\'s creep',
+                   'Sliding', 'Years'],
             'de': ['Untergrundprofil', 'Hangneigung (°)', 'Gletscherweite',
                    'ELA (m)', 'Gradient (mm w.e./Jahr/m)',
                    'Glen\'s creep', 'Gleiten', 'Jahre']
         },
-    
+
     'table_heading_2':
         {
-            'en': ['in equilibrium', 'outside domain'],
-            'de': ['im Gleichgewicht', 'außerhalb der Domäne']
+            'en': ['In equilibrium', 'Outside domain'],
+            'de': ['Im Gleichgewicht', 'Außerhalb der Domäne']
         },
-    
+
     'yes_label':
         {
-            'en': 'Yes', 
+            'en': 'Yes',
             'de': 'Ja'
         },
-    
+
     'no_label':
         {
-            'en': 'No', 
+            'en': 'No',
             'de': 'Nein'
         },
 }
@@ -904,13 +909,13 @@ timeseries_table_labels = {
 figure_tab_headings = {
     'geometry_plot':
         {
-            'en': 'geometry plot',
+            'en': 'Geometry plots',
             'de': 'Geometrie Darstellung'
         },
-    
+
     'timeseries_plot':
         {
-            'en': 'timeseries plot',
+            'en': 'Timeseries plots',
             'de': 'Zeitreihen Darstellung'
         },
 }
