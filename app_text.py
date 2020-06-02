@@ -156,6 +156,7 @@ header_text = {
                    'The additional variable displays can be switched on after or before a model run. ' +
                    'When the colors are switched on for a model run, the calculation ' +
                    'takes much longer: this is why they are switched off per default. ' +
+                   'To save calculation time you can switch off the update of the plots during the run. ' +
                    'You can also change the figure size and the text fontsize, ' +
                    'which can be useful to adapt to various screen sizes. ' +
                    'Note that you can also change the size of the whole app in ' +
@@ -166,6 +167,7 @@ header_text = {
                    'Die Farben können vor oder nach einem Modellauf ' +
                    'angezeigt werden. Modelläufe mit eingeschaltenen Farben benötigen ' +
                    'allerdings eine längere Rechenzeit. ' +
+                   'Für einen schnelleren Modellauf kann das Updaten der Darstellung ausgeschaltet werden. ' +
                    'Mit "Darstellungsgröße skalieren" kann die Darstellungsgröße der oberen Reihe ' +
                    'der "Geometrie Darstellung" geändert werden, damit man nicht scrollen muss um ' +
                    'alle Bilder zu sehen. Mit "Schriftgröße Infotext" kann die Schriftgöße in der ' +
@@ -229,24 +231,6 @@ header_text = {
                    '("Maximale Laufzeit eines Modellaufs (Jahre)"). Die Änderungen werden ' +
                    'mit einem Klick auf "neue Optionen festlegen" wirksam. Die aktuellen ' +
                    'Einstellungen werden im Text gezeigt (fettgeschriebene Zahlen).' +
-                   '</p>')
-        },
-
-    # help page for choose plots
-    'help_choose_plots':
-        {
-            'en': ('<div style="font-size:18px">Choose the plots to display</div>' +
-                   '<p style="margin-top: 0px;">' +
-                   'Here you can decide which plots you want to be shown and updated during model runs. ' +
-                   'If you are interested in one of the plots only (e.g. beginner mode) you can save ' +
-                   'calculation time by selecting only one view.'
-                   '</p>'),
-            'de': ('<div style="font-size:18px">Darstellung wählen</div>' +
-                   '<p style="margin-top: 0px;">' +
-                   'Hier kann ausgewählt werden welche Darstellung benutzt/aktualisiert ' +
-                   'werden soll. So kann Rechenzeit eingespart werden wenn man nur an ' +
-                   'einer Darstellung interessiert ist. Wenn eine Darstellung nicht ' +
-                   'aktiviert ist wird das in der Darstellung selbst angezeigt.' +
                    '</p>')
         },
 
@@ -555,6 +539,12 @@ panel_text = {
             'de': 'Schriftgröße Infotext'
         },
 
+    'show_geometry_plot_heading':
+        {
+            'en': 'Update geometry plots',
+            'de': 'Update Geometrie Darstellung'
+        },
+
     # timeseries opt panel
 
     'top_axis_heading':
@@ -630,20 +620,6 @@ panel_text = {
             'de': 'Neue Optionen festlegen'
         },
 
-    # choose plots panel
-
-    'show_geometry_plot_heading':
-        {
-            'en': 'Show geometry plots',
-            'de': 'Zeige Geometrie Darstellung'
-        },
-
-    'show_timeseries_plot_heading':
-        {
-            'en': 'Show timeseries plots',
-            'de': 'Zeige Zeitreihen Darstellung'
-        },
-
     # help panel
 
     'help_panel_description':
@@ -669,12 +645,6 @@ tab_menu_headings = {
         {
             'en': 'Advanced mode',
             'de': 'Fortgeschritten'
-        },
-
-    'choose_plots':
-        {
-            'en': 'Choose plots',
-            'de': 'Plots wählen'
         },
 
     'geometry_opt':
@@ -766,14 +736,8 @@ geometry_plot_labels = {
 
     'info_text_switched_off':
         {
-            'en': 'This plot is currently not used/updated.\nTo switch it on go to "choose plots".',
-            'de': 'Dieses Diagramm ist aktuell nicht aktiv\nAktivieren unter "Darstellung wählen"'
-        },
-
-    'info_text_switched_on':
-        {
-            'en': 'Plot is switched on again\nand will be updated with the next run!',
-            'de': 'Diagramm ist aktiv und\n wird mit nächstem Modellauf aktualisiert'
+            'en': 'This plot is currently not updated during the model run.\nTo switch it on go to "Geometry opt.".',
+            'de': 'Dieses Diagramm wird aktuell nicht aktualisiert.\nAktivieren unter "Geometrie opt."'
         },
 
     'info_text_running_model':
@@ -859,18 +823,6 @@ timeseries_plot_labels = {
         {
             'en': u'f\u2098\u2090\u2093 (m³/year)',
             'de': u'f\u2098\u2090\u2093 (m³/Jahr)'
-        },
-
-    'plot_active':
-        {
-            'en': 'Plot is ready to use \nand update with the next run',
-            'de': 'Diagramm bereit und\nwird mit nächstem Modellauf aktualisiert'
-        },
-
-    'plot_unactive':
-        {
-            'en': 'Plot is switched off \nto switch on look at "choose plots"',
-            'de': 'Diagramm nicht aktiv\nAktivieren unter "Diagramm wählen"'
         },
 }
 
