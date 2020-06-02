@@ -211,7 +211,7 @@ header_text = {
 
     'help_model_opt_2':
         {
-            'en': ('<div style="font-size:18px">model options (II of II)</div>' +
+            'en': ('<div style="font-size:18px">Model options (II of II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Moreover ' +
                    'you can define how often the current model state should be ' +
@@ -376,7 +376,7 @@ header_text = {
                    'Mausklick kann der Bildausschnitt verschoben werden. Alle Änderungen ' +
                    'des Bildausschnitts werden automatisch auf den anderen Bildern ' +
                    'aktualisiert. Mit "Reset" (zwei Pfeile welche einen Kreis formen) ' +
-                   'links von den Bildern kann der Zoom rückgängig gemacht werden. ' +
+                   'rechts von den Bildern kann der Zoom rückgängig gemacht werden. ' +
                    'Wenn man mit dem Mauszeiger über die Kurven fährt ' +
                    'werden die genauen Werte der Zeitschritte angezeigt.'
                    '</p>')
