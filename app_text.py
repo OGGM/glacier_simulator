@@ -614,12 +614,6 @@ panel_text = {
                    'Modellauf wird nach **{}** Jahren abgebrochen.')
         },
 
-    'set_model_options_heading':
-        {
-            'en': 'Set new model options',
-            'de': 'Neue Optionen festlegen'
-        },
-
     # help panel
 
     'help_panel_description':
