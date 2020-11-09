@@ -62,7 +62,7 @@ header_text = {
                    'Changes are becoming visible in the figures only after the ' +
                    '"run the model" button is clicked. In "beginner mode", the ' +
                    'model will always start from zero and will run until it reaches ' +
-                   'equilibrium (volume approximately constant between two consecuting timesteps).' +
+                   'equilibrium (volume approximately constant for 10 years).' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Anfänger</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -71,8 +71,8 @@ header_text = {
                    'Massenbilanzprofils. Die Änderungen werden in den Darstellungen sichtbar ' +
                    'nachdem der "Model starten" Knopf gedrückt wird. Das Model startet ' +
                    'jedesmal von Null und läuft solange ' +
-                   'bis ein Gleichgewicht erreicht wird (Volumen bleibt konstant zwischen ' +
-                   'zwei aufeinanderfolgenden Zeitschritten).' +
+                   'bis ein Gleichgewicht erreicht wird (Volumen bleibt ungefähr konstant ' +
+                   'für 10 Jahre).' +
                    '</p>')
         },
 
@@ -219,8 +219,8 @@ header_text = {
                    'you can define how often the current model state should be ' +
                    'shown in the plots ("show model progress every ... years") and you can ' +
                    'define a upper limit of calculation years when the model runs to equilibrium ' +
-                   '("maximum calculation year of model"). This is useful to avoid idle states. All changes are taken into account after ' +
-                   'clicking the "set new model options" button.' +
+                   '("maximum calculation year of model"). This is useful to avoid idle states. All ' +
+                   'changes are taken into account at the start of a model run. ' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Model optionen (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -229,7 +229,7 @@ header_text = {
                    'angezeigt werden soll ("zeige Modelfortschritt alle ... Jahre") und ' +
                    'es kann eine obere Grenze für einen Modellauf festgelegt werden ' +
                    '("Maximale Laufzeit eines Modellaufs (Jahre)"). Die Änderungen werden ' +
-                   'mit einem Klick auf "neue Optionen festlegen" wirksam. Die aktuellen ' +
+                   'mit jedem model lauf wirksam. Die aktuellen ' +
                    'Einstellungen werden im Text gezeigt (fettgeschriebene Zahlen).' +
                    '</p>')
         },
