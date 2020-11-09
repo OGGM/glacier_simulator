@@ -3,14 +3,14 @@ channels:
   - conda-forge
 dependencies:
   - pip
-  - python=3.6
+  - python=3.8
   - jupyter
   - bokeh
   - nbserverproxy
   - tornado
   - ipywidgets
   - graphviz
-  - numpy<1.17
+  - numpy
   - scipy
   - pandas
   - shapely
