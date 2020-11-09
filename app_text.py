@@ -229,8 +229,7 @@ header_text = {
                    'angezeigt werden soll ("zeige Modelfortschritt alle ... Jahre") und ' +
                    'es kann eine obere Grenze für einen Modellauf festgelegt werden ' +
                    '("Maximale Laufzeit eines Modellaufs (Jahre)"). Die Änderungen werden ' +
-                   'mit jedem model lauf wirksam. Die aktuellen ' +
-                   'Einstellungen werden im Text gezeigt (fettgeschriebene Zahlen).' +
+                   'mit jedem neuen Modellauf wirksam.' +
                    '</p>')
         },
 
@@ -606,14 +605,6 @@ panel_text = {
             'de': 'Model abbrechen nach .. Jahren'
         },
 
-    'current_model_options_text':
-        {
-            'en': ('Model currently showing progress every **{}** years and ' +
-                   'abort model after **{}** years of calculation'),
-            'de': ('Model zeigt zurzeit Fortschritt alle **{}** Jahre und ' +
-                   'Modellauf wird nach **{}** Jahren abgebrochen.')
-        },
-
     # help panel
 
     'help_panel_description':
@@ -754,14 +745,14 @@ geometry_plot_labels = {
 
     'info_text_aborted_model':
         {
-            'en': 'Model stopped (max calculation time reached, see "model options")',
-            'de': 'Modellauf abgebrochen (maximale Zeit erreicht, siehe "Modeloptionen")'
+            'en': 'Model stopped (max calculation time reached, see "Model opt.")',
+            'de': 'Modellauf abgebrochen (maximale Zeit erreicht, siehe "Model opt.")'
         },
 
     'info_text_outside_domain':
         {
-            'en': 'Model stopped (glacier outside of domain, see "model options")',
-            'de': 'Modellauf abgebrochen (Gletscher außerhalb der Domäne, siehe "Modeloptionen")'
+            'en': 'Model stopped (glacier outside of domain, see "Model opt.")',
+            'de': 'Modellauf abgebrochen (Gletscher außerhalb der Domäne, siehe "Model opt.")'
         },
 
     'info_text_statistics':
