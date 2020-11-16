@@ -79,33 +79,49 @@ header_text = {
     # advanced mode help
     'help_advanced_mode_1':
         {
-            'en': ('<div style="font-size:18px">Advanced mode (I of II)</div>' +
+            'en': ('<div style="font-size:18px">Advanced mode (I of III)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The "advanced mode" allows for more complex experiments. ' +
+                   'The "Advanced mode" allows for more complex experiments. ' +
                    'First, lets have a look at the ' +
                    '"run the model" tab. Here you can change the ELA (equilibrium line ' +
-                   'altitude), the gradient of the mass balance profile, Glen\'s creep ' +
-                   'parameter, and if sliding at the glacier bed should be accounted for. The ' +
-                   'slider defines for how long the model should be running with the chosen ' +
-                   'settings. In "advanced mode", the model always continues from the current ' +
-                   'glacier state. By clicking "advance model" the model will run for the ' +
-                   'chosen number of years. With "run to equilibrium", the model will ignore the slider and run until equilibrium is reached.' +
+                   'altitude), the gradient of the mass balance profile (can choose between ' +
+                   'one or two gradients, for two gradients you can define a different gradient '+
+                   'below and above the ELA), Glen\'s creep ' +
+                   'parameter, and if sliding at the glacier bed should be accounted for.' +
                    '</p>'),
-            'de': ('<div style="font-size:18px">Fortgeschritten (I von II)</div>' +
+            'de': ('<div style="font-size:18px">Fortgeschritten (I von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Als erstes zum "Modellauf" tab. Hier können die ELA (Gleichgewichtslinie), ' +
-                   'der Gradient des Massenbilanzprofils, der Glen\'s creep Parameter, das ' +
-                   'Gleiten am Gletscherbed (Ja/Nein) und die länge des nächsten Modellaufs ' +
-                   'eingestellt werden. In diesem Modus startet der Modellauf immer vom aktuellen ' +
-                   'Modelstand. Mit "Model starten" läuft das Model für die ausgewählte ' +
-                   'Dauer und mit "bis zum Gleichgewicht" läuft das Model bis es ' +
-                   'im Gleichgewicht (konstantes Volumen) ist.' +
+                   'der Gradient des Massenbilanzprofils (wählen zwischen einem oder zwei ' +
+                   'Gradienten, mit zwei können unterschiedliche gradienten unter und über der ' +
+                   'ELA definiert werden), der Glen\'s creep Parameter, das ' +
+                   'Gleiten am Gletscherbed (Ja/Nein).' +
                    '</p>')
         },
 
     'help_advanced_mode_2':
         {
-            'en': ('<div style="font-size:18px">Advanced mode (II of II)</div>' +
+            'en': ('<div style="font-size:18px">Advanced mode (II of III)</div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'In "Advanced mode", the model always continues from the current ' +
+                   'glacier state. The slider "Years to advance model" defines for how ' +
+                   'long the model should be running when clicking "advance model". ' +
+                   'With "run to equilibrium", the model will ignore the slider and run ' +
+                   'until equilibrium is reached.' +
+                   '</p>'),
+            'de': ('<div style="font-size:18px">Fortgeschritten (II von III)</div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'In diesem Modus startet der Modellauf immer vom aktuellen Modelstand.'
+                   'Mit "Jahre für Modellauf" wird definiert wielange das Model mit "Model ' +
+                   'starten" laufen soll. Mit "bis zum Gleichgewicht" wird der Regler ' +
+                   '"Jahre für Modelllauf" ignoriert und das Model läuft bis zum ' +
+                   'Gleichgewicht.' +
+                   '</p>')
+        },
+
+    'help_advanced_mode_3':
+        {
+            'en': ('<div style="font-size:18px">Advanced mode (III of III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Now looking at the "create new model" tab. Here you can start with a ' +
                    'fresh glacier state by defining the width and the bedrock profile. If the linear profile is ' +
@@ -113,7 +129,7 @@ header_text = {
                    'clicking the "create new model" button the changes are getting visible ' +
                    'in the figures and a fresh glacier state is initialised.'
                    '</p>'),
-            'de': ('<div style="font-size:18px">Fortgeschritten (II von II)</div>' +
+            'de': ('<div style="font-size:18px">Fortgeschritten (III von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Jetzt zum "neues Model" tab. Hier kann ein neues Model von Null ' +
                    'gestartet werden. Dafür kann das Untergrundprofil, die ' +
@@ -437,6 +453,24 @@ panel_text = {
         {
             'en': 'Mass-balance gradient',
             'de': 'Massenbilanzgradient'
+        },
+
+    'mb_gradient_below_heading':
+        {
+            'en': 'Mb grad below',
+            'de': 'Mb grad unter'
+        },
+
+    'mb_gradient_above_heading':
+        {
+            'en': 'Mb grad above',
+            'de': 'Mb grad über'
+        },
+
+    'mb_gradient_values':
+        {
+            'en': ['one Mb grad', 'two Mb grad'],
+            'de': ['ein Mb grad', 'zwei Mb grad']
         },
 
     'ELA_height_heading':
