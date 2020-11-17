@@ -451,26 +451,26 @@ panel_text = {
 
     'mb_gradient_heading':
         {
-            'en': 'Mass-balance gradient',
-            'de': 'Massenbilanzgradient'
+            'en': 'Mass-Balance gradient (MB grad)',
+            'de': 'Massenbilanzgradient (MB grad)'
         },
 
     'mb_gradient_below_heading':
         {
-            'en': 'Mb grad below',
-            'de': 'Mb grad unter'
+            'en': 'MB grad below',
+            'de': 'MB grad unter'
         },
 
     'mb_gradient_above_heading':
         {
-            'en': 'Mb grad above',
-            'de': 'Mb grad über'
+            'en': 'MB grad above',
+            'de': 'MB grad über'
         },
 
     'mb_gradient_values':
         {
-            'en': ['one Mb grad', 'two Mb grad'],
-            'de': ['ein Mb grad', 'zwei Mb grad']
+            'en': ['one MB grad', 'two MB grad'],
+            'de': ['ein MB grad', 'zwei MB grad']
         },
 
     'ELA_height_heading':
@@ -731,7 +731,7 @@ geometry_plot_labels = {
 
     'mb_x_label':
         {
-            'en': 'Annual mass-balance (mm w.e./year)',
+            'en': 'Annual Mass-Balance (mm w.e./year)',
             'de': 'Jährliche Massenbilanz (mm w.e/Jahr)'
         },
 
@@ -743,8 +743,8 @@ geometry_plot_labels = {
 
     'mb_label':
         {
-            'en': 'Mass-balance',
-            'de': 'Massenbilanz'
+            'en': 'Mass-Balance (MB)',
+            'de': 'Massenbilanz (MB)'
         },
 
     'info_text_new_model':
@@ -793,10 +793,10 @@ geometry_plot_labels = {
         {
             'en': ('\nTime: {:4.0f} years     Length: {:4.2f} km      Area: {:.2f} km²     Volume: {:.2f} km³\n'
                    'Max ice thickness: {:.0f} m          Max ice velocity: {:.0f} m/year\n'
-                   'Glacier-wide mass-balance (mb): {:.2} mm w.e./year'),
+                   'Glacier-wide Mass-Balance: {:.2} mm w.e./year'),
             'de': ('\nZeit: {:4.0f} years     Länge: {:4.2f} km      Fläche: {:.2f} km²     Volumen: {:.2f} km³\n'
                    'Max Eisdicke: {:.0f} m          Max Eisgeschwindigkeit: {:.0f} m/year\n'
-                   'Gletscherweite Massenbilanz (mb): {:.2} mm w.e./year')
+                   'Gletscherweite Massenbilanz: {:.2} mm w.e./year')
         },
 }
 
