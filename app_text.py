@@ -84,18 +84,16 @@ header_text = {
                    'The "Advanced mode" allows for more complex experiments. ' +
                    'First, lets have a look at the ' +
                    '"run the model" tab. Here you can change the ELA (equilibrium line ' +
-                   'altitude), the gradient of the mass balance profile (can choose between ' +
-                   'one or two gradients, for two gradients you can define a different gradient '+
-                   'below and above the ELA), Glen\'s creep ' +
+                   'altitude), the gradient of the mass balance profile (can define a ' +
+                   'different gradient below and above the ELA, or set equal), Glen\'s creep ' +
                    'parameter, and if sliding at the glacier bed should be accounted for.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (I von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Als erstes zum "Modellauf" tab. Hier können die ELA (Gleichgewichtslinie), ' +
-                   'der Gradient des Massenbilanzprofils (wählen zwischen einem oder zwei ' +
-                   'Gradienten, mit zwei können unterschiedliche gradienten unter und über der ' +
-                   'ELA definiert werden), der Glen\'s creep Parameter, das ' +
-                   'Gleiten am Gletscherbed (Ja/Nein).' +
+                   'der Gradient des Massenbilanzprofils (es können unterschiedliche gradienten ' +
+                   'unter und über der ELA definiert werden, oder beide gleich gesetzt werden), ' +
+                   'der Glen\'s creep Parameter, das Gleiten am Gletscherbed (Ja/Nein).' +
                    '</p>')
         },
 
@@ -457,20 +455,20 @@ panel_text = {
 
     'mb_gradient_below_heading':
         {
-            'en': 'MB grad below',
-            'de': 'MB grad unter'
+            'en': 'MB grad below ELA',
+            'de': 'MB grad unter ELA'
         },
 
     'mb_gradient_above_heading':
         {
-            'en': 'MB grad above',
-            'de': 'MB grad über'
+            'en': 'MB grad above ELA',
+            'de': 'MB grad über ELA'
         },
 
-    'mb_gradient_values':
+    'mb_gradient_above_equal_below':
         {
-            'en': ['one MB grad', 'two MB grad'],
-            'de': ['ein MB grad', 'zwei MB grad']
+            'en': ' equal below ELA',
+            'de': ' gleich unter ELA'
         },
 
     'ELA_height_heading':
