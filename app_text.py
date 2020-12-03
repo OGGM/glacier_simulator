@@ -313,8 +313,10 @@ header_text = {
         {
             'en': ('<div style="font-size:18px">Glacier geometry plots (III of III)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'The text on the bottom right shows statistics of the current modelled glacier state. <br>' +
-                   'If you want to zoom into a figure, you can do this by clicking and drawing a rectangle in one of the figures. All other figures ' +
+                   'The text on the bottom right shows statistics of the current modelled glacier state. ' +
+                   'AAR is the Accumulation Area Ratio, which describes the ratio of the accumulation area ' +
+                   '(area above ELA) to the total area.' +
+                   '<br>If you want to zoom into a figure, you can do this by clicking and drawing a rectangle in one of the figures. All other figures ' +
                    'will rezoom automatically to the same extent. To go back to the ' +
                    'original extent, click on the "Reset" button to the right of the ' +
                    'figures (two arrows forming a circle).' +
@@ -322,7 +324,9 @@ header_text = {
             'de': ('<div style="font-size:18px">Geometrie Darstellung (III von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Der Text unten rechts zeigt aktuelle Werte des Models an. ' +
-                   'Wenn du hineinzoomen möchtest kannst du mit der Maus ein Rechteck ' +
+                   'AAR ist dabei die Accumulation Area Ratio, welche das Verhältnis der accumulations Fläche ' +
+                   '(Fläche über ELA) zur gesamt Fläche beschreibt.' +
+                   '<br>Wenn du hineinzoomen möchtest kannst du mit der Maus ein Rechteck ' +
                    'aufziehen (linke Maustaste gedrückt halten). Alle Bilder zoomen ' +
                    'automatisch auf den gleichen Ausschnitt. Um den Zoom rückgängig ' +
                    'zu machen auf "Reset" rechts neben den Bildern drücken (zwei ' +
@@ -600,9 +604,9 @@ panel_text = {
     'timeseries_axis_options':
         {
             'en': ['Volume', 'Area', 'Length','Max velocity',
-                   'Max thickness', 'Max ice flux'],
+                   'Max thickness', 'Max ice flux', 'Accumulation Area Ratio AAR'],
             'de': ['Volumen', 'Fläche', 'Länge', 'Max Geschwindigkeit',
-                   'Max Dicke', 'Max Eisfluss']
+                   'Max Dicke', 'Max Eisfluss', 'Accumulation Area Ratio AAR']
         },
 
     # panel for model options
@@ -791,10 +795,10 @@ geometry_plot_labels = {
         {
             'en': ('\nTime: {:4.0f} years     Length: {:4.2f} km      Area: {:.2f} km²     Volume: {:.2f} km³\n'
                    'Max ice thickness: {:.0f} m          Max ice velocity: {:.0f} m/year\n'
-                   'Glacier-wide Mass-Balance: {:.2} mm w.e./year'),
+                   'AAR: {:.2}     Glacier-wide Mass-Balance: {:.2} mm w.e./year'),
             'de': ('\nZeit: {:4.0f} years     Länge: {:4.2f} km      Fläche: {:.2f} km²     Volumen: {:.2f} km³\n'
                    'Max Eisdicke: {:.0f} m          Max Eisgeschwindigkeit: {:.0f} m/year\n'
-                   'Gletscherweite Massenbilanz: {:.2} mm w.e./year')
+                   'AAR: {:.2}     Gletscherweite Massenbilanz: {:.2} mm w.e./year')
         },
 }
 
@@ -840,6 +844,11 @@ timeseries_plot_labels = {
         {
             'en': u'f\u2098\u2090\u2093 (m³/year)',
             'de': u'f\u2098\u2090\u2093 (m³/Jahr)'
+        },
+    'y_label_AAR':
+        {
+            'en': 'AAR',
+            'de': 'AAR'
         },
 }
 
