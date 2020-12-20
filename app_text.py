@@ -795,10 +795,10 @@ geometry_plot_labels = {
         {
             'en': ('\nTime: {:4.0f} years     Length: {:4.2f} km      Area: {:.2f} km²     Volume: {:.2f} km³\n'
                    'Max ice thickness: {:.0f} m          Max ice velocity: {:.0f} m/year\n'
-                   'AAR: {:.2}     Glacier-wide Mass-Balance: {:.2} mm w.e./year'),
+                   'AAR: {:.2}     Glacier-wide Mass-Balance: {:.2f} mm w.e./year'),
             'de': ('\nZeit: {:4.0f} years     Länge: {:4.2f} km      Fläche: {:.2f} km²     Volumen: {:.2f} km³\n'
                    'Max Eisdicke: {:.0f} m          Max Eisgeschwindigkeit: {:.0f} m/year\n'
-                   'AAR: {:.2}     Gletscherweite Massenbilanz: {:.2} mm w.e./year')
+                   'AAR: {:.2}     Gletscherweite Massenbilanz: {:.2f} mm w.e./year')
         },
 }
 
