@@ -19,7 +19,7 @@ dependencies:
   - xarray
   - pyviz_comms
   - param
-  - holoviews
+  - holoviews=1.13.5
   - hvplot
   - panel
   - parambokeh
