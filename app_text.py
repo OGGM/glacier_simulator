@@ -85,14 +85,16 @@ header_text = {
                    'First, lets have a look at the ' +
                    '"run the model" tab. Here you can change the ELA (equilibrium line ' +
                    'altitude), the gradient of the mass balance profile (can define a ' +
-                   'different gradient below and above the ELA, or set equal), Glen\'s creep ' +
+                   'different gradient below and above the ELA, set slider ' +
+                   '"Mass-Balance above ELA" leftmost to use only one gradient), Glen\'s creep ' +
                    'parameter, and if sliding at the glacier bed should be accounted for.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (I von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Als erstes zum "Modellauf" tab. Hier können die ELA (Gleichgewichtslinie), ' +
                    'der Gradient des Massenbilanzprofils (es können unterschiedliche gradienten ' +
-                   'unter und über der ELA definiert werden, oder beide gleich gesetzt werden), ' +
+                   'unter und über der ELA definiert werden, setze "Massenbilanzgradient über ELA" ' +
+                   'ganz links um nur einen gradienten zu verwenden), ' +
                    'der Glen\'s creep Parameter, das Gleiten am Gletscherbed (Ja/Nein).' +
                    '</p>')
         },
@@ -453,26 +455,26 @@ panel_text = {
 
     'mb_gradient_heading':
         {
-            'en': 'Mass-Balance gradient (MB grad)',
-            'de': 'Massenbilanzgradient (MB grad)'
+            'en': 'Mass-Balance gradient',
+            'de': 'Massenbilanzgradient'
         },
 
     'mb_gradient_below_heading':
         {
-            'en': 'MB grad below ELA',
-            'de': 'MB grad unter ELA'
+            'en': 'Mass-Balance gradient',
+            'de': 'Massenbilanzgradient'
         },
 
     'mb_gradient_above_heading':
         {
-            'en': 'MB grad above ELA',
-            'de': 'MB grad über ELA'
+            'en': 'Mass-Balance gradient above ELA',
+            'de': 'Massenbilanzgradient über ELA'
         },
 
-    'mb_gradient_above_equal_below':
+    'mb_gradient_below_suffix':
         {
-            'en': ' equal below ELA',
-            'de': ' gleich unter ELA'
+            'en': ' below ELA',
+            'de': ' unter ELA'
         },
 
     'ELA_height_heading':
