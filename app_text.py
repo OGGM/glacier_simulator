@@ -509,8 +509,14 @@ panel_text = {
 
     'years_to_advance_model_heading':
         {
-            'en': 'Years to advance model',
-            'de': 'Jahre für Modellauf'
+            'en': 'Advance the model for',
+            'de': 'Model starten für'
+        },
+
+    'years_label':
+        {
+            'en': 'years',
+            'de': 'Jahre'
         },
 
     'button_for_equilibrium_run_heading':
@@ -521,7 +527,7 @@ panel_text = {
 
     'button_to_advance_for_some_years_heading':
         {
-            'en': 'Advance model',
+            'en': 'Advance the model',
             'de': 'Model starten'
         },
 
