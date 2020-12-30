@@ -104,15 +104,15 @@ header_text = {
             'en': ('<div style="font-size:18px">Advanced mode (II of III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'In "Advanced mode", the model always continues from the current ' +
-                   'glacier state. The slider "Years to advance model" defines for how ' +
-                   'long the model should be running when clicking "advance model". ' +
+                   'glacier state. The slider "Advance the model for: <strong>X years</strong>" defines for how ' +
+                   'long the model should be running when clicking "Advance the model". ' +
                    'With "run to equilibrium", the model will ignore the slider and run ' +
                    'until equilibrium is reached.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (II von III)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'In diesem Modus startet der Modellauf immer vom aktuellen Modelstand.'
-                   'Mit "Jahre für Modellauf" wird definiert wielange das Model mit "Model ' +
+                   'Mit "Model starten für: <strong>X Jahre</strong>" wird definiert wielange das Model mit "Model ' +
                    'starten" laufen soll. Mit "bis zum Gleichgewicht" wird der Regler ' +
                    '"Jahre für Modelllauf" ignoriert und das Model läuft bis zum ' +
                    'Gleichgewicht.' +
@@ -233,18 +233,18 @@ header_text = {
                    '<p style="margin-top: 0px;">' +
                    'Moreover ' +
                    'you can define how often the current model state should be ' +
-                   'shown in the plots ("show model progress every ... years") and you can ' +
+                   'shown in the plots ("Show model progress every") and you can ' +
                    'define a upper limit of calculation years when the model runs to equilibrium ' +
-                   '("maximum calculation year of model"). This is useful to avoid idle states. All ' +
+                   '("Abort model after: <strong>X years</strong>"). This is useful to avoid idle states. All ' +
                    'changes are taken into account at the start of a model run. ' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Model optionen (II von II)</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Außerdem ' +
                    'kann definiert werden wieoft der Modelstatus während dem Modellauf ' +
-                   'angezeigt werden soll ("zeige Modelfortschritt alle ... Jahre") und ' +
+                   'angezeigt werden soll ("Zeige Modelfortschritt alle") und ' +
                    'es kann eine obere Grenze für einen Modellauf festgelegt werden ' +
-                   '("Maximale Laufzeit eines Modellaufs (Jahre)"). Die Änderungen werden ' +
+                   '("Model abbrechen nach: <strong>X Jahre</strong>"). Die Änderungen werden ' +
                    'mit jedem neuen Modellauf wirksam.' +
                    '</p>')
         },
