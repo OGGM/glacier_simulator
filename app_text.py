@@ -639,8 +639,14 @@ panel_text = {
 
     'dyears_model_slider_heading':
         {
-            'en': 'Show model progress every .. years',
-            'de': 'Zeige Modelfortschritt alle .. Jahre'
+            'en': 'Show model progress every',
+            'de': 'Zeige Modelfortschritt alle'
+        },
+
+    'dyears_model_slider_options':
+        {
+            'en': {'1 year': 1, '2 years': 2, '5 years': 5, '10 years': 10},
+            'de': {'1 Jahr': 1, '2 Jahre': 2, '5 Jahre': 5, '10 Jahre': 10}
         },
 
     'max_calc_years_slider_heading':
