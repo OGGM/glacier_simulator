@@ -645,8 +645,8 @@ panel_text = {
 
     'max_calc_years_slider_heading':
         {
-            'en': 'Abort model after .. years',
-            'de': 'Model abbrechen nach .. Jahren'
+            'en': 'Abort model after',
+            'de': 'Model abbrechen nach'
         },
 
     # help panel
