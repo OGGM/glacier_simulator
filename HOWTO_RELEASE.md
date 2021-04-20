@@ -29,3 +29,4 @@ git push origin master
 ```
 9. Edit the Bokeh server configuration file to publish the new version on OGGM-Edu: https://github.com/OGGM/Bokeh-Docker/blob/master/bokeh.oggm.org/docker-compose.yml
 
+10. Change MyBinder link and docker comment to new version number in OGGM-Edu doccumentation: https://github.com/OGGM/oggm-edu/blob/master/docs/simulator.rst
