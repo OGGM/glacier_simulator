@@ -19,14 +19,21 @@ git tag -a v1.X -m 'v1.X'
 git push origin master
 git push origin --tags
 ```
-
+5. Update the stable branch and push it. "stable" is used as a shortcut to the latest stable version (for permalinks, etc.). It's OK to force-push to master if necessary:
+```
+git checkout stable
+git rebase master
+git push origin stable
+git checkout master
+```
 6. Edit `version.py` to revert to the dev version (i.e. `v1.X+1.dev`: `v1.4.dev`, `v1.5.dev`, etc.)
-7. Edit `README.md` to change the link of the first badge which should point to the latest stable tag (`v1.3.`, `v1.4`, etc.)
-8. Commit your changes and push to master again:
+7. Edit `README.md` to change the link of the first badge which should point to the latest stable tag (`v1.3.`, `v1.4`, etc.) (REMOVE when we have a `stable` branch)
+8. Commit your changes and push to master again: (REMOVE when we have a stable branch)
 ```
 git commit -a -m 'Revert to dev version'
 git push origin master
 ```
-9. Edit the Bokeh server configuration file to publish the new version on OGGM-Edu: https://github.com/OGGM/Bokeh-Docker/blob/master/bokeh.oggm.org/docker-compose.yml
+9. Edit the Bokeh server configuration file to publish the new version on OGGM-Edu: https://github.com/OGGM/Bokeh-Docker/blob/master/bokeh.oggm.org/docker-compose.yml (I don't want to update this to stable in order to actively control that it works and force a rebuild of the server)
 
-10. Change MyBinder link and docker comment to new version number in OGGM-Edu doccumentation: https://github.com/OGGM/oggm-edu/blob/master/docs/simulator.rst
+10. Change MyBinder link and docker comment to new version number in OGGM-Edu doccumentation: https://github.com/OGGM/oggm-edu/blob/master/docs/simulator.rst (remove when we have a `stable` branch)
+ 
