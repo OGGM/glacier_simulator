@@ -5,7 +5,7 @@ dependencies:
   - pip
   - python=3.8
   - jupyter
-  - bokeh
+  - bokeh<2.3
   - nbserverproxy
   - tornado
   - ipywidgets
