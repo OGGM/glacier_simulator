@@ -19,9 +19,9 @@ dependencies:
   - xarray
   - pyviz_comms
   - param
-  - holoviews
+  - holoviews=1.14.1
   - hvplot
-  - panel
+  - panel=0.10.3
   - parambokeh
   - ipympl
   - pip:
