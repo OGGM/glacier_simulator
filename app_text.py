@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 the app text is structured in seven dictionaries:
 
@@ -747,8 +748,8 @@ geometry_plot_labels = {
 
     'mb_x_label':
         {
-            'en': 'Annual Mass-Balance (mm w.e./year)',
-            'de': 'Jährliche Massenbilanz (mm w.e/Jahr)'
+            'en': 'Annual Mass-Balance (m/year)',
+            'de': 'Jährliche Massenbilanz (m/Jahr)'
         },
 
     'area_x_label':
