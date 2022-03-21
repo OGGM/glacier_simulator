@@ -806,6 +806,12 @@ geometry_plot_labels = {
             'de': 'Modellauf abgebrochen (Gletscher außerhalb der Domäne, siehe "Model opt.")'
         },
 
+    'info_text_no_glacier_left':
+        {
+            'en': 'No glacier and ELA above glacier bed!',
+            'de': 'Kein Gletscher vorhanden und ELA höher als Gletscherbett!'
+        },
+
     'info_text_statistics':
         {
             'en': ('\nTime: {:4.0f} years     Length: {:4.2f} km      Area: {:.2f} km²     Volume: {:.2f} km³\n'
