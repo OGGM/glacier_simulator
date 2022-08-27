@@ -60,18 +60,18 @@ header_text = {
                    'In "beginner mode" (the default), you can change four model parameters: ' +
                    'the slope and the width profile of the glacier bed, the ELA ' +
                    '(Equilibrium Line Altitude) and the gradient of the mass-balance profile.' +
-                   'Changes are becoming visible in the figures only after the ' +
-                   '"run the model" button is clicked. In "beginner mode", the ' +
-                   'model will always start from zero and will run until it reaches ' +
+                   'Changes of the glacier bed are becoming visible in the figures only after ' +
+                   'the "Reset and run" button is clicked. In "beginner mode", the ' +
+                   'model will always run until it reaches ' +
                    'equilibrium (volume approximately constant for 10 years).' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Anfänger</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Hier können vier Parameter des Models verändert werden: die Hangneigung, ' +
                    'die Gletscherweite, die ELA (Gleichgewichtslinie) und der Gradient des ' +
-                   'Massenbilanzprofils. Die Änderungen werden in den Darstellungen sichtbar ' +
-                   'nachdem der "Model starten" Knopf gedrückt wird. Das Model startet ' +
-                   'jedesmal von Null und läuft solange ' +
+                   'Massenbilanzprofils. Die Änderungen des Gletscherbetts werden in den ' +
+                   'Darstellungen nur sichtbar nachdem der "Von Neuem starten" Knopf gedrückt ' +
+                   'wird. Im "Anfänger" modus, läuft das Model immer solange ' +
                    'bis ein Gleichgewicht erreicht wird (Volumen bleibt ungefähr konstant ' +
                    'für 10 Jahre).' +
                    '</p>')
@@ -484,10 +484,16 @@ panel_text = {
             'de': 'ELA (Gleichgewichtslinie)'
         },
 
-    'beginner_button_heading':
+    'beginner_button_reset_run_heading':
         {
-            'en': 'Run the model',
-            'de': 'Model starten'
+            'en': 'Reset and run',
+            'de': 'Von Neuem starten'
+        },
+    
+    'beginner_button_advance_heading':
+        {
+            'en': 'Advance',
+            'de': 'Weiter laufen'
         },
 
     'bed_rock_profil_heading':
