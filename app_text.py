@@ -59,21 +59,21 @@ header_text = {
                    '<p style="margin-top: 0px;">' +
                    'In "beginner mode" (the default), you can change four model parameters: ' +
                    'the slope and the width profile of the glacier bed, the ELA ' +
-                   '(Equilibrium Line Altitude) and the gradient of the mass-balance profile.' +
-                   'Changes of the glacier bed are becoming visible in the figures only after ' +
-                   'the "Reset and run" button is clicked. In "beginner mode", the ' +
-                   'model will always run until it reaches ' +
-                   'equilibrium (volume approximately constant for 10 years).' +
+                   '(Equilibrium Line Altitude) and the gradient of the mass-balance profile. ' +
+                   'The "Reset" button changes the glacier bed slope and width. ' +
+                   'After clicking "Run to equilibrium" the model will start and run until it ' +
+                   'reaches equilibrium (volume approximately constant for 10 years) using the ' +
+                   'currently selected ELA and mass-balance gradient.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Anfänger</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Hier können vier Parameter des Models verändert werden: die Hangneigung, ' +
                    'die Gletscherweite, die ELA (Gleichgewichtslinie) und der Gradient des ' +
-                   'Massenbilanzprofils. Die Änderungen des Gletscherbetts werden in den ' +
-                   'Darstellungen nur sichtbar nachdem der "Von Neuem starten" Knopf gedrückt ' +
-                   'wird. Im "Anfänger" modus, läuft das Model immer solange ' +
-                   'bis ein Gleichgewicht erreicht wird (Volumen bleibt ungefähr konstant ' +
-                   'für 10 Jahre).' +
+                   'Massenbilanzprofils. Der "Neues Model" Knopf ändert die Hangneigung und ' +
+                   'die Gletscherweite. Durch das klicken von "Starten zum Gleichgewicht" ' +
+                   'läuft das Model solange bis ein Gleichgewicht erreicht wird (Volumen ' +
+                   'bleibt ungefähr konstant für 10 Jahre) mit der ausgewählten ELA und ' +
+                   'Gradient des Massenbilanzprofils.' +
                    '</p>')
         },
 
@@ -484,16 +484,16 @@ panel_text = {
             'de': 'ELA (Gleichgewichtslinie)'
         },
 
-    'beginner_button_reset_run_heading':
+    'beginner_button_reset_heading':
         {
-            'en': 'Reset and run',
-            'de': 'Von Neuem starten'
+            'en': 'Reset',
+            'de': 'Neues Model'
         },
     
-    'beginner_button_advance_heading':
+    'beginner_button_run_heading':
         {
-            'en': 'Advance',
-            'de': 'Weiter laufen'
+            'en': 'Run to equilibrium',
+            'de': 'Starten zum Gleichgewicht'
         },
 
     'bed_rock_profil_heading':
