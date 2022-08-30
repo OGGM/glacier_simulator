@@ -60,20 +60,22 @@ header_text = {
                    'In "beginner mode" (the default), you can change four model parameters: ' +
                    'the slope and the width profile of the glacier bed, the ELA ' +
                    '(Equilibrium Line Altitude) and the gradient of the mass-balance profile. ' +
-                   'The "Reset" button changes the glacier bed slope and width. ' +
                    'After clicking "Run to equilibrium" the model will start and run until it ' +
                    'reaches equilibrium (volume approximately constant for 10 years) using the ' +
-                   'currently selected ELA and mass-balance gradient.' +
+                   'currently selected ELA and mass-balance gradient. ' +
+                   'The "Reset model" button changes the glacier bed slope and width and removes ' +
+                   'all ice.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Anfänger</div>' +
                    '<p style="margin-top: 0px;">' +
                    'Hier können vier Parameter des Models verändert werden: die Hangneigung, ' +
                    'die Gletscherweite, die ELA (Gleichgewichtslinie) und der Gradient des ' +
-                   'Massenbilanzprofils. Der "Neues Model" Knopf ändert die Hangneigung und ' +
-                   'die Gletscherweite. Durch das klicken von "Starten zum Gleichgewicht" ' +
+                   'Massenbilanzprofils. Durch das klicken von "Starten zum Gleichgewicht" ' +
                    'läuft das Model solange bis ein Gleichgewicht erreicht wird (Volumen ' +
                    'bleibt ungefähr konstant für 10 Jahre) mit der ausgewählten ELA und ' +
-                   'Gradient des Massenbilanzprofils.' +
+                   'Gradient des Massenbilanzprofils. ' +
+                   'Der "Neues Model" Knopf ändert die Hangneigung und ' +
+                   'die Gletscherweite und entfernt das Eis.' +
                    '</p>')
         },
 
@@ -84,7 +86,7 @@ header_text = {
                    '<p style="margin-top: 0px;">' +
                    'The "Advanced mode" allows for more complex experiments. ' +
                    'First, lets have a look at the ' +
-                   '"run the model" tab. Here you can change the ELA (equilibrium line ' +
+                   '"Run model" tab. Here you can change the ELA (equilibrium line ' +
                    'altitude), the gradient of the mass balance profile (can define a ' +
                    'different gradient below and above the ELA, set slider ' +
                    '"Mass-Balance above ELA" leftmost to use only one gradient), Glen\'s creep ' +
@@ -107,7 +109,7 @@ header_text = {
                    'In "Advanced mode", the model always continues from the current ' +
                    'glacier state. The slider "Advance the model for: <strong>X years</strong>" defines for how ' +
                    'long the model should be running when clicking "Advance the model". ' +
-                   'With "run to equilibrium", the model will ignore the slider and run ' +
+                   'With "Run to equilibrium", the model will ignore the slider and run ' +
                    'until equilibrium is reached.' +
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (II von III)</div>' +
@@ -124,10 +126,10 @@ header_text = {
         {
             'en': ('<div style="font-size:18px">Advanced mode (III of III)</div>' +
                    '<p style="margin-top: 0px;">' +
-                   'Now looking at the "create new model" tab. Here you can start with a ' +
+                   'Now looking at the "Reset model" tab. Here you can start with a ' +
                    'fresh glacier state by defining the width and the bedrock profile. If the linear profile is ' +
                    'selected, you can also choose its slope. By ' +
-                   'clicking the "create new model" button the changes are getting visible ' +
+                   'clicking the "Reset model" button the changes are getting visible ' +
                    'in the figures and a fresh glacier state is initialised.'
                    '</p>'),
             'de': ('<div style="font-size:18px">Fortgeschritten (III von III)</div>' +
@@ -486,7 +488,7 @@ panel_text = {
 
     'beginner_button_reset_heading':
         {
-            'en': 'Reset',
+            'en': 'Reset model',
             'de': 'Neues Model'
         },
     
@@ -540,20 +542,20 @@ panel_text = {
 
     'button_to_create_new_model_heading':
         {
-            'en': 'Create new model',
+            'en': 'Reset model',
             'de': 'Neues Model'
         },
 
     # headings for advanced mode tabs
     'run_model_tab_heading':
         {
-            'en': 'Run the model',
+            'en': 'Run model',
             'de': 'Modellauf'
         },
 
     'create_new_model_tab_heading':
         {
-            'en': 'Create new model',
+            'en': 'Reset model',
             'de': 'Neues Model'
         },
 
