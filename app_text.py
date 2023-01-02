@@ -143,6 +143,19 @@ header_text = {
                    '</p>')
         },
 
+    # help paged for real glacier mode
+    'help_real_glaciers_1':
+        {
+            'en': ('<div style="font-size:18px">Real Glaciers </div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'No help available sofar. Will be added soon!' +
+                   '</p>'),
+            'de': ('<div style="font-size:18px">Echte Gletscher </div>' +
+                   '<p style="margin-top: 0px;">' +
+                   'Keine Hilfe verfügbar bis jetzt. Wird bald hinzugefügt!' +
+                   '</p>'),
+        },
+
     # help page for geometry options
     'help_geometry_opt_1':
         {
@@ -154,7 +167,6 @@ header_text = {
                    'the ice thickness (blue colormap). The colorbars update their ' +
                    'upper limit according to the ' +
                    'current maximum values (shown in info text on the bottom right). ' +
-
                    '</p>'),
             'de': ('<div style="font-size:18px">Geometrie optionen (I von II)</div>' +
                    '<p style="margin-top: 0px;">' +
@@ -559,6 +571,186 @@ panel_text = {
             'de': 'Neues Model'
         },
 
+    # real glacier panel
+
+    'real_glacier_text_placeholder':
+        {
+            'en': 'Enter RGI-ID, e.g. RGI60-11.00897',
+            'de': 'RGI-ID wählen, z.B. RGI60-11.00897'
+        },
+    
+    'select_real_glacier_from_list_tab_heading':
+        {
+            'en': 'From List',
+            'de': 'Von Liste'
+        },
+
+    'select_real_glacier_from_rgi_id_tab_heading':
+        {
+            'en': 'From RGI-ID',
+            'de': 'Von RGI-ID'
+        },
+
+    'initial_ice_thickness_label':
+        {
+            'en': 'Initial Ice-Thickness',
+            'de': 'Anfängliche Eis-Dicke'
+        },
+    
+    'initial_ice_thickness_options':
+        {
+            'en': ['Ice Free', 'RGI state', '2020'],
+            'de': ['Eis Frei', 'RGI Status', '2020']
+        },
+
+    'bed_shape_label':
+        {
+            'en': 'Bed Shape',
+            'de': 'Gletscherbett Form'
+        },
+
+    'bed_shape_options':
+        {
+            'en': ['Rectangular', 'Trapezoidal'],
+            'de': ['Rechteckig', 'Trapezförmig']
+        },
+
+    'select_real_glacier_button':
+        {
+            'en': 'Select Glacier',
+            'de': 'Gletscher wählen'
+        },
+
+    'climate_selection_options':
+        {
+            'en': ['Past', 'Future'],
+            'de': ['Vergangenheit', 'Zukunft']
+        },
+
+    'future_scenario_selection_heading':
+        {
+            'en': 'Future Scenario',
+            'de': 'Zukunfts Szenario'
+        },
+
+    'end_of_climate_period_label':
+        {
+            'en': 'End of climate period',
+            'de': 'Ende der Klimaperiode'
+        },
+
+    'start_of_climate_period_label':
+        {
+            'en': 'Start of climate period',
+            'de': 'Start der Klimaperiode'
+        },
+
+    'select_mass_balance_heading':
+        {
+            'en': 'Select Mass-Balance',
+            'de': 'Wähle Massenbilanz'
+        },
+
+    'select_mass_balance_options':
+        {
+            'en': ['Constant Mass-Balance',
+                   'Random Mass-Balance',
+                   'Yearly Mass-Balance'],
+            'de': ['Konstante Massenbilanz',
+                   'Zufällige Massenbilanz',
+                   'Jährliche Massenbilanz']
+        },
+
+    'select_climate_period_heading':
+        {
+            'en': 'Select Climate period:',
+            'de': 'Wähle Klima Periode:'
+        },
+
+    'mu_slider_name':
+        {
+            'en': 'Melt factor (µ)',
+            'de': 'Schmelz Faktor (µ)',
+        },
+
+    'temp_bias_slider_name':
+        {
+            'en': 'Temperature bias (T_bias)',
+            'de': 'Temperatur Bias (T_bias)',
+        },
+
+    'temp_grad_slider_name':
+        {
+            'en': 'Temp. gradient (T_grad)',
+            'de': 'Temp. Gradient (T_grad)',
+        },
+
+    'prcp_fac_slider_name':
+        {
+            'en': 'Precipitation factor (Prcp_fac)',
+            'de': 'Niederschlags Faktor (Prcp_fac)',
+        },
+
+    'temp_melt_slider_name':
+        {
+            'en': 'T for ice melt (T_melt)',
+            'de': 'T für Eisschmelze (T_melt)',
+        },
+
+    'temp_solid_slider_name':
+        {
+            'en': 'T for solid prcp (T_solid)',
+            'de': 'T für festen Niederschlag (T_solid)',
+        },
+
+    'temp_liquid_slider_name':
+        {
+            'en': 'T for liquid prcp (T_liquid)',
+            'de': 'T für flüssigen Niederschlag (T_liquid)',
+        },
+
+    'set_mb_settings_button_name':
+        {
+            'en': 'Change Mass-Balance settings',
+            'de': 'MB Einst. festlegen',
+        },
+
+    'set_ice_dynamics_button_name':
+        {
+            'en': 'Change Ice Dynamics',
+            'de': 'Eis-Dynamik festlegen'
+        },
+
+    'mb_settings_tab_heading':
+        {
+            'en': 'MB Settings',
+            'de': 'MB Einstellung'
+        },
+
+    'ice_dynamics_tab_heading':
+        {
+            'en': 'Ice Dynamics',
+            'de': 'Eis Dynamik'
+        },
+
+    'set_real_glacier_tabs_heading':
+        {
+            'en': 'Set Glacier',
+            'de': 'Gletscher'
+        },
+
+    'run_real_glacier_tabs_heading':
+        {
+            'en': 'Run Glacier',
+            'de': 'Modellauf'
+        },
+
+    'options_real_glacier_tabs_heading':
+        {
+            'en': 'Options',
+            'de': 'Optionen'
+        },
+        
     # geometry options panel
 
     'show_velocity_heading':
@@ -677,6 +869,7 @@ panel_text = {
         },
 }
 
+
 # headings of menu tabs
 tab_menu_headings = {
     'beginner_mode':
@@ -689,6 +882,12 @@ tab_menu_headings = {
         {
             'en': 'Advanced mode',
             'de': 'Fortgeschritten'
+        },
+
+    'real_glaciers':
+        {
+            'en': 'Real Glaciers',
+            'de': 'Echte Gletscher'
         },
 
     'geometry_opt':
